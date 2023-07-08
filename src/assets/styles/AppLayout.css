@@ -1,0 +1,26 @@
+.left-side {
+  width: 60px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #000249;
+  position: fixed;
+  transition: all 0.8s;
+}
+
+.left-side:hover {
+  width: 240px;
+}
+
+.right-side {
+  transition: 0.5s ease-out;
+  margin-left: 60px;
+  background-color: #f6f6f6;
+  transition: all 0.8s;
+  height: 100%;
+  padding: 7px 15px;
+}
+
+.left-side:hover + .right-side {
+  margin-left: 240px;
+}

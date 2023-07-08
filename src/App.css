@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #000249;
+}
+::-webkit-scrollbar-thumb {
+  background: #000249;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  padding: 0 5px 15px 5px;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--bs-heading-color);
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-left: 5px;
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-select {
+  width: 100%;
+  border-radius: 7px;
+  padding: 6px 10px;
+  border: 0.5px solid #e5e5e5;
+  outline: none;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 0.5px solid var(--bs-border-color);
+  outline: none;
+  margin-top: 3px;
+  position: relative;
+  display: block;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:hover,
+.form-select:hover {
+  border-color: #000249;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #000249;
+}
+
+.form-control::placeholder {
+  font-size: 13px;
+  color: var(--bs-text-color);
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px solid var(--bs-border-color);
+  transition: 0.5s ease-out;
+  width: 100%;
+}
+
+textarea:hover {
+  border: 1px solid var(--bs-blue);
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--bs-blue);
+}
+
+.btn {
+  border: none;
+  background-color: var(--bs-blue);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 7px 30px;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.ed-div {
+  padding: 0 5px;
+}
+.edit-icon {
+  color: #198754;
+}
+
+.eye-icon {
+  color: #0d6efd;
+}
+
+.delete-icon {
+  color: var(--bs-red);
+}
+
+.add-btn {
+  border: none;
+  background-color: var(--bs-red);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 7px 20px;
+  transition: 0.5s ease-out;
+}
+
+.add-btn:hover {
+  color: #fff;
+  background-color: var(--bs-blue);
+}
+
+hr {
+  background-color: rgb(194, 194, 194);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.modal-body {
+  padding: 16px 30px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-dialog-60 {
+  max-width: 60%;
+}
+
+.modal-dialog-30 {
+  max-width: 30%;
+}
+
+.cancel-btn,
+.submit-btn {
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 7px 30px;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+}
+
+.cancel-btn {
+  background-color: var(--bs-red);
+}
+
+.cancel-btn:hover {
+  background-color: var(--bs-blue);
+}
+
+.submit-btn {
+  background-color: var(--bs-blue);
+}
+
+.submit-btn:hover {
+  background-color: var(--bs-red);
+}
+.form-control.is-invalid {
+  background-image: none;
+  border-color: var(--bs-red);
+  padding-right: inherit;
+}
+.invalid-feedback {
+  font-size: 12px;
+}
+
+.form-control.is-invalid:focus,
+.btn-close:focus,
+.form-select.is-invalid:focus{
+  box-shadow: none;
+}
+
+.form-select.is-invalid:not([multiple]):not([size]){
+  background-image: none;
 }
