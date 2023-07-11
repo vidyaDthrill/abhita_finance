@@ -1,4 +1,3 @@
-
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -115,17 +114,16 @@ textarea:focus {
 
 .add-btn {
   border: none;
-  background-color: var(--bs-red);
+  background: linear-gradient(45deg, var(--bs-blue), var(--bs-red));
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   color: #fff;
   font-weight: 600;
   border-radius: 20px;
   padding: 7px 20px;
   transition: 0.5s ease-out;
 }
-
 .add-btn:hover {
-  color: #fff;
-  background-color: var(--bs-blue);
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.4);
 }
 
 hr {
@@ -189,10 +187,19 @@ hr {
 
 .form-control.is-invalid:focus,
 .btn-close:focus,
-.form-select.is-invalid:focus{
+.form-select.is-invalid:focus {
   box-shadow: none;
 }
 
-.form-select.is-invalid:not([multiple]):not([size]){
+.form-select.is-invalid:not([multiple]):not([size]) {
   background-image: none;
+}
+
+.form-check-input:checked {
+  background-color: var(--bs-blue);
+  border-color: var(--bs-blue);
+}
+
+.form-check-input:focus {
+  box-shadow: none;
 }

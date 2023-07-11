@@ -51,7 +51,7 @@ export default function FormControl({
           )}
           data-name={dataName}
         />
-        {error || error !== "" && !group ? (
+        {error || (error !== "" && !group) ? (
           <div className="invalid-feedback">{error}</div>
         ) : (
           ""
@@ -97,7 +97,7 @@ export default function FormControl({
             className={
               error
                 ? error
-                  ? "form-group feild-invalid"
+                  ? "form-group field-invalid"
                   : "form-group"
                 : "form-group"
             }

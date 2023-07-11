@@ -31,31 +31,34 @@ const Sidebar = () => {
     },
     {
       icon: <IoPeopleOutline size={25} className="sidebar-icons" />,
-      title: "Members",
+      title: "Customers",
       sub: [
-        { title: "Members", to: "/app/members" },
-        { title: "Member Group", to: "/app/members_group" },
+        { title: "Customers", to: "/app/customers" },
+        { title: "Customers Group", to: "/app/customers_group" },
       ],
     },
     {
       icon: <FaRegMoneyBillAlt size={25} className="sidebar-icons" />,
       title: "Create Group Loan",
+      to: "/app/create_group_loan",
     },
     {
       icon: <BiRupee size={25} className="sidebar-icons" />,
       title: "Loan Summary",
+      to: "/app/loan_summary",
     },
     {
       icon: <FaHandHoldingUsd size={25} className="sidebar-icons" />,
       title: "Disbursement",
+      to: "/app/disbursement",
     },
     {
       icon: <BsCollection size={25} className="sidebar-icons" />,
       title: "Collections",
       sub: [
-        { title: "Show Collections", to: "/app/show_collections" },
-        { title: "EMI Collections", to: "/app/emi_collections" },
-        { title: "Member Collections", to: "/app/member_collections" },
+        { title: "Show Collection", to: "/app/show_collection" },
+        { title: "EMI Collection", to: "/app/emi_collection" },
+        { title: "Customers Collection", to: "/app/customers_collection" },
       ],
     },
   ];
@@ -84,7 +87,7 @@ const Sidebar = () => {
     <>
       <div className="img-outer-wrapper">
         <div className="img-inner-wrapper">
-          <img src={IMAGES.Logo} alt="logo" className="logo" />
+          <img src={IMAGES.AbhitaLogo} alt="logo" className="logo" />
         </div>
       </div>
       <div className="sidebar-menu">
