@@ -290,7 +290,7 @@ const CreateGroupLoan = () => {
                 className="cancel-btn"
                 data-bs-dismiss="modal"
               >
-                Cancle
+                Cancel
               </button>
               <button
                 type="button"

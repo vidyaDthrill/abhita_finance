@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import "../assets/styles/AppLayout.css";
+import "../assets/styles/MediaQueries/AppLayoutMedia.css";
 import Header from "./Header.js";
 import Sidebar from "./Sidebar.js";
 

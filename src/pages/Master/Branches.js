@@ -425,26 +425,26 @@ const Branches = () => {
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <label className="form-label">Status</label>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="Status"
                       id="StatusActive"
                     />
-                    <label class="form-check-label" for="StatusActive">
+                    <label className="form-check-label" for="StatusActive">
                       Active
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="Status"
                       id="StatusInactive"
                       checked
                     />
-                    <label class="form-check-label" for="StatusInactive">
+                    <label className="form-check-label" for="StatusInactive">
                       Inactive
                     </label>
                   </div>
@@ -457,7 +457,7 @@ const Branches = () => {
                 className="cancel-btn"
                 data-bs-dismiss="modal"
               >
-                Cancle
+                Cancel
               </button>
               <button
                 type="button"

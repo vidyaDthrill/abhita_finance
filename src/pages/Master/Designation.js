@@ -166,26 +166,26 @@ const Designation = () => {
               <div className="ps-2">
                 <label className="form-label">Status</label>
                 <div className="d-flex">
-                  <div class="form-check pe-5">
+                  <div className="form-check pe-5">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="Status"
                       id="StatusActive"
                     />
-                    <label class="form-check-label" for="StatusActive">
+                    <label className="form-check-label" for="StatusActive">
                       Active
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="radio"
                       name="Status"
                       id="StatusInactive"
                       checked
                     />
-                    <label class="form-check-label" for="StatusInactive">
+                    <label className="form-check-label" for="StatusInactive">
                       Inactive
                     </label>
                   </div>
@@ -198,7 +198,7 @@ const Designation = () => {
                 className="cancel-btn"
                 data-bs-dismiss="modal"
               >
-                Cancle
+                Cancel
               </button>
               <button
                 type="button"

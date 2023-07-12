@@ -88,6 +88,11 @@ textarea:focus {
   transition: 0.5s ease-out;
 }
 
+.icons-color {
+  color: #868686;
+  cursor: pointer;
+}
+
 .btn:hover {
   color: #fff;
   background-color: var(--bs-red);

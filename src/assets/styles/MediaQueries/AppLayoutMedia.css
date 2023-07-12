@@ -1,0 +1,8 @@
+@media (max-width: 576px) {
+  .left-side {
+    display: none;
+  }
+  .right-side {
+    margin-left: 0;
+  }
+}

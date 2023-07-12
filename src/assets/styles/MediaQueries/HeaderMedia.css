@@ -1,0 +1,8 @@
+@media (max-width: 576px) {
+  .header-right {
+    display: none !important;
+  }
+  .header-menu{
+    display: block;
+  }
+}

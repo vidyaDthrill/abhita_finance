@@ -68,22 +68,22 @@ const Groups = () => {
     []
   );
 
-  const [DepartmentState, setDepartmentState] = useState({
-    Department: "",
+  const [GroupState, setGroupState] = useState({
+    GrCode: "",
     errors: [],
   });
 
   const handleChange = (e) => {
-    setDepartmentState({
-      ...DepartmentState,
+    setGroupState({
+      ...GroupState,
       [e.target.name]: e.target.value,
-      errors: { ...DepartmentState.errors, [e.target.name]: "" },
+      errors: { ...GroupState.errors, [e.target.name]: "" },
     });
   };
 
   const clearStates = () => {
-    setDepartmentState({
-      Department: "",
+    setGroupState({
+      GrCode: "",
       errors: "",
     });
   };
@@ -91,25 +91,35 @@ const Groups = () => {
   const validate = () => {
     const errors = {};
     let IsValid = true;
-    if (!DepartmentState.Department) {
+    if (!GroupState.GroupName) {
       IsValid = false;
-      errors["Department"] = "Department Is Required";
-    } else if (!checkonlyletterandcharacter(DepartmentState.Department)) {
+      errors["GroupName"] = "Group Name Is Required";
+    } else if (!checkonlyletterandcharacter(GroupState.GroupName)) {
       IsValid = false;
-      errors["Department"] = "Please Enter Valid Name";
+      errors["GroupName"] = "Please Enter Valid GroupName";
     } else {
-      errors["Department"] = "";
+      errors["GroupName"] = "";
     }
 
-    setDepartmentState({
-      ...DepartmentState,
+    if (!GroupState.GroupName) {
+      IsValid = false;
+      errors["Branch"] = "Branch Is Required";
+    } else if (!checkonlyletterandcharacter(GroupState.Branch)) {
+      IsValid = false;
+      errors["Branch"] = "Please Enter Valid Branch";
+    } else {
+      errors["Branch"] = "";
+    }
+
+    setGroupState({
+      ...GroupState,
       errors: errors,
     });
     return IsValid;
   };
 
   const handleSubmit = () => {
-    console.log(DepartmentState);
+    console.log(GroupState);
     if (validate()) {
       clearStates();
       alert("Done");
@@ -151,7 +161,7 @@ const Groups = () => {
           <div className="modal-content">
             <div className="modal-header">
               <h4 className="modal-title" id="staticBackdropLabel">
-                Add Department
+                Add Group
               </h4>
               <button
                 type="button"
@@ -161,22 +171,80 @@ const Groups = () => {
               ></button>
             </div>
             <div className="modal-body">
-              <FormControl
-                wrapperclass=""
-                type="text"
-                label="Department"
-                name="Department"
-                placeholder="Enter Department"
-                value={DepartmentState.Department}
-                onChange={handleChange}
-                error={
-                  DepartmentState.errors
-                    ? DepartmentState.errors.Department
-                      ? DepartmentState.errors.Department
+              <div className="mb-3">
+                <label className="form-label">Group Code</label>
+                <input
+                  className="form-control"
+                  type="text"
+                  name="GrCode"
+                  placeholder="GR1010"
+                  disabled
+                />
+              </div>
+              <div className="mb-1">
+                <FormControl
+                  wrapperclass=""
+                  type="text"
+                  label="Group Name"
+                  name="GroupName"
+                  placeholder="Enter Group Name"
+                  value={GroupState.GroupName}
+                  onChange={handleChange}
+                  error={
+                    GroupState.errors
+                      ? GroupState.errors.GroupName
+                        ? GroupState.errors.GroupName
+                        : ""
                       : ""
-                    : ""
-                }
-              />
+                  }
+                />
+              </div>
+              <div className="mb-1">
+                <FormControl
+                  wrapperclass=""
+                  type="text"
+                  label="Branch"
+                  name="Branch"
+                  placeholder="Enter Branch"
+                  value={GroupState.Branch}
+                  onChange={handleChange}
+                  error={
+                    GroupState.errors
+                      ? GroupState.errors.Branch
+                        ? GroupState.errors.Branch
+                        : ""
+                      : ""
+                  }
+                />
+              </div>
+              <div className="ps-2">
+                <label className="form-label">Status</label>
+                <div className="d-flex">
+                  <div className="form-check pe-5">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="Status"
+                      id="StatusActive"
+                    />
+                    <label className="form-check-label" for="StatusActive">
+                      Active
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="radio"
+                      name="Status"
+                      id="StatusInactive"
+                      checked
+                    />
+                    <label className="form-check-label" for="StatusInactive">
+                      Inactive
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="modal-footer">
               <button
@@ -184,7 +252,7 @@ const Groups = () => {
                 className="cancel-btn"
                 data-bs-dismiss="modal"
               >
-                Cancle
+                Cancel
               </button>
               <button
                 type="button"
