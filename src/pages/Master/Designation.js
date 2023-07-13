@@ -34,9 +34,6 @@ const Designation = () => {
           return (
             <div className="d-flex">
               <div className="ed-div">
-                <LuEye size={20} className="eye-icon " />
-              </div>
-              <div className="ed-div">
                 <TbEdit size={20} className="edit-icon " />
               </div>
               <div className="ed-div">
@@ -102,7 +99,7 @@ const Designation = () => {
 
   return (
     <>
-      <div className="mb-3 d-flex justify-content-between">
+      <div className="mb-3 d-flex justify-content-between align-items-center">
         <p>
           Home / Master / <strong>Designation</strong>
         </p>

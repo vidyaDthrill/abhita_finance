@@ -7,6 +7,7 @@ import {
   usePagination,
 } from "react-table";
 import "../assets/styles/Table.css";
+import "../assets/styles/MediaQueries/TableMedia.css";
 import { MdSearch } from "react-icons/md";
 
 function GlobalFilter({
@@ -76,49 +77,45 @@ export default function Table({ columns, data }) {
           </div>
         </div>
         <div className="scrollable">
-            <table
-              {...getTableProps()}
-              className="datatables-basic table border-top dataTable no-footer dtr-column scroll"
-            >
-              <thead>
-                {headerGroups.map((headerGroup) => (
-                  <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map((column) => (
-                      <th
-                        {...column.getHeaderProps(
-                          column.getSortByToggleProps()
-                        )}
-                      >
-                        {column.render("Header")}
-                        <span>
-                          {column.isSorted
-                            ? column.isSortedDesc
-                              ? " ▼"
-                              : " ▲"
-                            : ""}
-                        </span>
-                      </th>
-                    ))}
+          <table
+            {...getTableProps()}
+            className="datatables-basic table border-top dataTable no-footer dtr-column scroll"
+          >
+            <thead>
+              {headerGroups.map((headerGroup) => (
+                <tr {...headerGroup.getHeaderGroupProps()}>
+                  {headerGroup.headers.map((column) => (
+                    <th
+                      {...column.getHeaderProps(column.getSortByToggleProps())}
+                    >
+                      {column.render("Header")}
+                      <span>
+                        {column.isSorted
+                          ? column.isSortedDesc
+                            ? " ▼"
+                            : " ▲"
+                          : ""}
+                      </span>
+                    </th>
+                  ))}
+                </tr>
+              ))}
+            </thead>
+            <tbody {...getTableBodyProps()}>
+              {page.map((row, i) => {
+                prepareRow(row);
+                return (
+                  <tr {...row.getRowProps()}>
+                    {row.cells.map((cell) => {
+                      return (
+                        <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                      );
+                    })}
                   </tr>
-                ))}
-              </thead>
-              <tbody {...getTableBodyProps()}>
-                {page.map((row, i) => {
-                  prepareRow(row);
-                  return (
-                    <tr {...row.getRowProps()}>
-                      {row.cells.map((cell) => {
-                        return (
-                          <td {...cell.getCellProps()}>
-                            {cell.render("Cell")}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6">

@@ -75,21 +75,18 @@ const LoanSummaryDetails = () => {
       principal: "0",
       interest: "0",
       total: "2729",
-      
     },
     {
       emiDate: "21/02/2022",
       principal: "0",
       interest: "0",
       total: "2729",
-      
     },
     {
       emiDate: "21/02/2022",
       principal: "0",
       interest: "0",
       total: "2729",
-      
     },
   ];
 
@@ -129,11 +126,10 @@ const LoanSummaryDetails = () => {
 
   return (
     <>
-    <div className="mb-3 d-flex justify-content-between">
+      <div className="mb-3 d-flex justify-content-between align-items-center">
         <p>
           Home / Loan Summary / <strong>Loan Summary Details</strong>
         </p>
-        
       </div>
       <div className="row">
         <div className="col-lg-3">
@@ -186,20 +182,21 @@ const LoanSummaryDetails = () => {
             <div className="loan-summary-right-side">
               <nav className="nav">
                 <a
-                  className="nav-link pe-5 active"
+                  className=
+                    "nav-link me-4 active" 
                   aria-current="page"
                   href="#"
                   onClick={funPaymentState}
                 >
                   Payment Record
                 </a>
-                <a className="nav-link pe-5" href="#" onClick={funEMIState}>
+                <a className="nav-link me-4" href="#" onClick={funEMIState}>
                   EMI Record
                 </a>
-                <a className="nav-link pe-5" href="#">
+                <a className="nav-link me-4" href="#">
                   Due
                 </a>
-                <a className="nav-link pe-5" href="#">
+                <a className="nav-link me-4" href="#">
                   Advance Payment
                 </a>
                 <a className="nav-link" href="#">

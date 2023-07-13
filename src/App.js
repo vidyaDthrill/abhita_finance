@@ -16,6 +16,7 @@ import ShowCollection from "./pages/Collections/ShowCollection";
 import EMICollection from "./pages/Collections/EMICollection";
 import CustomersCollection from "./pages/Collections/CustomersCollections";
 import LoanSummaryDetails from "./pages/LoanSummaryDetails";
+import AddCustomer from "./pages/Customers/AddCustomer";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           {/* Customers */}
           <Route path="Customers" element={<Customers />} />
           <Route path="Customers_group" element={<CustomersGroup />} />
+          <Route path="add_customers" element={<AddCustomer />} />
           {/* Create Group Loan */}
           <Route path="create_group_loan" element={<CreateGroupLoan />} />
           {/* Loan Summary*/}

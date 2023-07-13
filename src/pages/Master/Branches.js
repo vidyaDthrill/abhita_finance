@@ -215,7 +215,7 @@ const Branches = () => {
 
   return (
     <>
-      <div className="mb-3 d-flex justify-content-between">
+      <div className="mb-3 d-flex justify-content-between align-items-center">
         <p>
           Home / Master / <strong>Branches</strong>
         </p>

@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import Table from "../../components/Table";
 import { LuEye } from "react-icons/lu";
 import { TbEdit } from "react-icons/tb";
+import { HiOutlineDocument, HiOutlineDocumentCheck } from "react-icons/hi2";
 import { MdAdd, MdDelete } from "react-icons/md";
 import { checkonlyletterandcharacter } from "../../config/Validate";
 import FormControl from "../../components/FormControl";
@@ -50,7 +51,13 @@ const CustomersGroup = () => {
         Header: "Action",
         Cell: ({ row }) => {
           return (
-            <div className="d-flex d-flex justify-content-between">
+            <div className="d-flex">
+              <div className="ed-div">
+                <HiOutlineDocument size={20} className="doc-icon " />
+              </div>
+              <div className="ed-div">
+                <HiOutlineDocumentCheck size={20} className="verified-icon " />
+              </div>
               <div className="ed-div">
                 <LuEye size={20} className="eye-icon " />
               </div>
@@ -103,12 +110,12 @@ const CustomersGroup = () => {
 
     if (!CustomerGroupState.Branch) {
       IsValid = false;
-      errors["Member"] = "Member Is Required";
-    } else if (!checkonlyletterandcharacter(CustomerGroupState.Member)) {
+      errors["Customer"] = "Customer Is Required";
+    } else if (!checkonlyletterandcharacter(CustomerGroupState.Customer)) {
       IsValid = false;
-      errors["Member"] = "Please Enter Valid Member";
+      errors["Customer"] = "Please Enter Valid Customer";
     } else {
-      errors["Member"] = "";
+      errors["Customer"] = "";
     }
 
     if (!CustomerGroupState.Branch) {
@@ -140,7 +147,7 @@ const CustomersGroup = () => {
 
   return (
     <>
-      <div className="mb-3 d-flex justify-content-between">
+      <div className="mb-3 d-flex justify-content-between align-items-center">
         <p>
           Home / Customers / <strong>Customers Group</strong>
         </p>
@@ -205,14 +212,14 @@ const CustomersGroup = () => {
                   <FormControl
                     wrapperclass=""
                     type="select"
-                    label="Member"
-                    name="Member"
-                    value={CustomerGroupState.Member}
+                    label="Customer"
+                    name="Customer"
+                    value={CustomerGroupState.Customer}
                     onChange={handleChange}
                     error={
                       CustomerGroupState.errors
-                        ? CustomerGroupState.errors.Member
-                          ? CustomerGroupState.errors.Member
+                        ? CustomerGroupState.errors.Customer
+                          ? CustomerGroupState.errors.Customer
                           : ""
                         : ""
                     }

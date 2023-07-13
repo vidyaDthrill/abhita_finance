@@ -8,6 +8,7 @@ import {
   checkonlynumbervalue,
 } from "../../config/Validate";
 import FormControl from "../../components/FormControl";
+import { useNavigate } from "react-router-dom";
 
 const Customers = () => {
   const data = [
@@ -116,7 +117,7 @@ const Customers = () => {
     // Bank Details & Location
     AccountNo: "",
     Ifsc: "",
-    BankName:"",
+    BankName: "",
     BankAddress: "",
     AccountNm: "",
     errors: [],
@@ -156,7 +157,7 @@ const Customers = () => {
       // Bank Details & Location
       AccountNo: "",
       Ifsc: "",
-      BankName:"",
+      BankName: "",
       BankAddress: "",
       AccountNm: "",
       errors: "",
@@ -427,17 +428,18 @@ const Customers = () => {
       alert("Please Enter Proper Details ");
     }
   };
-
+  const navigate = useNavigate();
   return (
     <>
-      <div className="mb-3 d-flex justify-content-between">
+      <div className="mb-3 d-flex justify-content-between align-items-center">
         <p>
           Home / Customers / <strong>Customers</strong>
         </p>
         <button
           className="add-btn d-flex align-items-center"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
+          // data-bs-toggle="modal"
+          // data-bs-target="#staticBackdrop"
+          onClick={() => navigate("/app/add_customers")}
         >
           <MdAdd size={20} />
           <p>Customers List</p>

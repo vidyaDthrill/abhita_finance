@@ -173,7 +173,7 @@ const CreateGroupLoan = () => {
 
   return (
     <>
-      <div className="mb-3 d-flex justify-content-between">
+      <div className="mb-3 d-flex justify-content-between align-items-center">
         <p>
           Home / <strong>Create Group Loan</strong>
         </p>

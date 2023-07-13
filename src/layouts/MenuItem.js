@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { RxDot } from "react-icons/rx";
 
 export default function MenuItem({ title, icon, to, sub, idx, activeIdx }) {
-
   const menuItem = useRef();
   return (
     <>
@@ -46,8 +45,7 @@ export default function MenuItem({ title, icon, to, sub, idx, activeIdx }) {
             {sub.map((s, i) => (
               <li
                 className={
-                  "sub-menu-item" +
-                  (i === activeIdx.s ? " active" : "")
+                  "sub-menu-item" + (i === activeIdx.s ? " active" : "")
                 }
                 key={i}
               >
@@ -62,7 +60,6 @@ export default function MenuItem({ title, icon, to, sub, idx, activeIdx }) {
           <></>
         )}
       </li>
-      
     </>
   );
 }

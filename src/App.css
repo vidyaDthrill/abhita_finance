@@ -58,7 +58,7 @@
 
 .form-control::placeholder {
   font-size: 13px;
-  color: var(--bs-text-color);
+  color: #d6d6d6;
 }
 
 textarea {
@@ -103,8 +103,17 @@ textarea:focus {
 }
 
 .ed-div {
-  padding: 0 5px;
+  padding: 0 3px;
 }
+
+.doc-icon {
+  color: rgb(255, 166, 0);
+}
+
+.verified-icon {
+  color: rgb(255, 0, 85);
+}
+
 .edit-icon {
   color: #198754;
 }
