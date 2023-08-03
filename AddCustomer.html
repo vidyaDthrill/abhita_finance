@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/Abhita-Land(A).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhita Finance</title>
+
+    <link rel="stylesheet" href="./css/Sidebar.css" />
+    <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/Common.css" />
+    <link rel="stylesheet" href="./css/AddCustomer.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
+    <link rel="stylesheet" href="./css/MediaQueries.css" />
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css" />
+    <!-- DataTables -->
+    <link
+      rel="stylesheet"
+      href="./plugins/datatables-bs4/css/dataTables.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/datatables-responsive/css/responsive.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/datatables-buttons/css/buttons.bootstrap4.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css" />
+
+    <!-- Script -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <div class="logo_wrapper">
+        <img src="./images/Logo.jpg" alt="" class="logo" />
+      </div>
+
+      <div class="sidebar_menu_wrapper">
+        <ul class="sidebar_menu">
+          <li>
+            <a href="Dashboard.html">
+              <i class="bi bi-house-door sidebar_icons"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <div class="accordion accordion-flush" id="accordionMaster">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseMaster"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseMaster"
+                  >
+                    <a href="#">
+                      <i class="bi bi-plus-circle sidebar_icons"></i>
+                      <p>Master</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseMaster"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionMaster"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="Group.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Group</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Bank</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="Branches.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Branches</p>
+                        </a>
+                      </li>
+                      <!-- <li>
+                        <a href="Designation.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Designation</p>
+                        </a>
+                      </li> -->
+                      <li>
+                        <a href="Location.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Location</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="User.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>User</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApplicationSettings.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Settings</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="accordion accordion-flush" id="accordionCustomers">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseCustomer"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseCustomer"
+                  >
+                    <a href="#">
+                      <i class="bi bi-people sidebar_icons"></i>
+                      <p>Customers</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseCustomer"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionCustomers"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="Customers.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Customers</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="CustomerGroup.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Customers Group</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="CreateGroupLoan.html">
+              <i class="bi bi-cash sidebar_icons"></i>
+              <p>Create Group Loan</p>
+            </a>
+          </li>
+          <li>
+            <a href="LoanSummary.html">
+              <i class="bi bi-currency-rupee sidebar_icons"></i>
+              <p>Loan Summary</p>
+            </a>
+          </li>
+          <li>
+            <a href="Disbursement.html">
+              <i class="bi bi-bank sidebar_icons"></i>
+              <p>Disbursement</p>
+            </a>
+          </li>
+          <li>
+            <div class="accordion accordion-flush" id="accordionCollection">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseCollection"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseCollection"
+                  >
+                    <a href="#">
+                      <i class="bi bi-collection sidebar_icons"></i>
+                      <p>Collections</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseCollection"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionCollection"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="ShowCollection.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Show Collection</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="EMICollection.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>EMI Collection</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="CustomerCollection.html">
+                          <i class="bi bi-circle accordion_sidebar_icons"></i>
+                          <p>Customer Collection</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <div class="bg_color">
+      <!-- Header Start -->
+      <div class="header">
+        <div class="header_fixed">
+          <div
+            class="d-lg-flex d-md-none d-none justify-content-between align-items-center"
+          >
+            <div class="position-relative">
+              <input type="text" class="search_input" />
+              <i class="bi bi-search header_search_icon"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="header_notification">
+                <i class="bi bi-bell icon_color icon_size"></i>
+                <div class="notification_count">5</div>
+              </div>
+              <div class="d-flex align-items-center header_right_side">
+                <div class="dropdown">
+                  <div
+                    class="dropdown-toggle d-flex align-items-center ms-3"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="px-2 d-flex align-items-center">
+                      <div class="header_profile_wrapper">
+                        <i class="bi bi-person icon_color header_profile"></i>
+                      </div>
+                      <div class="header_profile_name ps-2">
+                        <p>User Name</p>
+                        <p>Designation</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="dropdown-menu dropdown-list">
+                    <li>
+                      <a class="dropdown-item d-flex" href="#">
+                        <i class="bi bi-box-arrow-right icon_color"></i>
+                        <p class="ps-2 mb-0 logout">Logout</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="ps-3">
+                  <i class="bi bi-gear icon_color icon_size setting"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile View -->
+          <div
+            class="d-lg-none d-flex justify-content-between align-items-center mobile_view"
+          >
+            <h4 class="mb-0">Abhita Finance</h4>
+            <i
+              class="bi bi-list header_menu"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            ></i>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="logo_wrapper">
+                <img src="./images/Logo.jpg" alt="" class="logo" />
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="mb_sidebar_menu_wrapper">
+                <ul class="mb_sidebar_menu">
+                  <li>
+                    <a href="Dashboard.html">
+                      <i class="bi bi-house-door sidebar_icons"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="accordion accordion-flush" id="accordionMaster">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseMaster"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseMaster"
+                          >
+                            <a href="#">
+                              <i class="bi bi-plus-circle sidebar_icons"></i>
+                              <p>Master</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseMaster"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionMaster"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="Group.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Group</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Bank</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="Branches.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Branches</p>
+                                </a>
+                              </li>
+                              <!-- <li>
+                                <a href="Designation.html">
+                                  <i class="bi bi-circle accordion_sidebar_icons"></i>
+                                  <p>Designation</p>
+                                </a>
+                              </li> -->
+                              <li>
+                                <a href="Location.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Location</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="User.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>User</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="ApplicationSettings.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Settings</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionCustomers"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseCustomer"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseCustomer"
+                          >
+                            <a href="#">
+                              <i class="bi bi-people sidebar_icons"></i>
+                              <p>Customers</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseCustomer"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionCustomers"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="Customers.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Customers</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="CustomerGroup.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Customers Group</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="CreateGroupLoan.html">
+                      <i class="bi bi-cash sidebar_icons"></i>
+                      <p>Create Group Loan</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="LoanSummary.html">
+                      <i class="bi bi-currency-rupee sidebar_icons"></i>
+                      <p>Loan Summary</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Disbursement.html">
+                      <i class="bi bi-bank sidebar_icons"></i>
+                      <p>Disbursement</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionCollection"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseCollection"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseCollection"
+                          >
+                            <a href="#">
+                              <i class="bi bi-collection sidebar_icons"></i>
+                              <p>Collections</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseCollection"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionCollection"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="ShowCollection.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Show Collection</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="EMICollection.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>EMI Collection</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="CustomerCollection.html">
+                                  <i
+                                    class="bi bi-circle accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Customer Collection</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Content Start -->
+      <div class="content">
+        <h1 class="modal-title">Add Customer</h1>
+        <hr />
+        <div class="site-wrapper">
+          <section class="tabs-wrapper">
+            <div class="tabs-container">
+              <div class="tabs-block">
+                <div class="tabs">
+                  <input type="radio" name="tabs" id="tab1" checked="checked" />
+                  <label for="tab1" class="tab_label">Main</label>
+                  <div class="tab mt-3 filter_section">
+                    <h4 class="section_wise_heading mt-3">Basic Details</h4>
+
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Customer Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Customer Alise Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Group Code</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Group Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Branch</label>
+                          <select class="form-select">
+                            <option>Pune</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Father Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Mother Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Spouse Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Gender</label>
+                          <select class="form-select">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Date of Birth</label>
+                          <input class="form-control" type="date" />
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="section_wise_heading mt-3">Contact Details</h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Mobile No.</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label"
+                            >Alternative Mobile No.</label
+                          >
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Email ID</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4 class="section_wise_heading mt-3">Address Details</h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Address</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Area</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">City</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">State</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">District</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Pincode</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="cancel-btn">Save</button>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="tabs" id="tab2" />
+                  <label for="tab2" class="tab_label"
+                    >User Identification</label
+                  >
+                  <div class="tab mt-3 filter_section">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Upload Photo</label>
+                          <input class="form-control" type="file" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Upload Aadhar Card</label>
+                          <input class="form-control" type="file" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Upload Pan Card</label>
+                          <input class="form-control" type="file" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Upload Bank Passbook</label>
+                          <input class="form-control" type="file" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Upload Signature </label>
+                          <input class="form-control" type="file" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="cancel-btn">Save</button>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="tabs" id="tab3" />
+                  <label for="tab3" class="tab_label"
+                    >Bank details & Location</label
+                  >
+                  <div class="tab mt-3 filter_section">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Account No.</label>
+                          <input class="form-control" type="password" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Confirm Account No.</label>
+                          <input class="form-control" type="password" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">IFSC Code</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Bank Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Branch</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Name On Account</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Bank Address</label>
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="cancel-btn">Save</button>
+                    </div>
+                  </div>
+                  <input type="radio" name="tabs" id="tab4" />
+                  <label for="tab4" class="tab_label">Income</label>
+                  <div class="tab mt-3 filter_section">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Income</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="cancel-btn">Save</button>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="tabs" id="tab5" />
+                  <label for="tab5" class="tab_label">Reference</label>
+                  <div class="tab mt-3 filter_section">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Relation</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Gender</label>
+                          <select class="form-select">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Mobile No.</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Email ID</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Address</label>
+                          <textarea class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="cancel-btn">Save</button>
+                    </div>
+                  </div>
+
+                  <input type="radio" name="tabs" id="tab6" />
+                  <label for="tab6" class="tab_label">Nominee & Group</label>
+                  <div class="tab mt-3 filter_section">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Relation</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Gender</label>
+                          <select class="form-select">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Mobile No.</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Email ID</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Date Of Birth</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Address</label>
+                          <textarea class="form-control"></textarea>
+                          <input type="checkbox" /><span class="ps-1"
+                            >Same as Applicant</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button type="button" class="cancel-btn">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="./dist/js/demo.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="./plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="./plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="./plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="./plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="./plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="./plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="./plugins/jszip/jszip.min.js"></script>
+    <script src="./plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="./plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="./plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="./plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="./plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script>
+      $(function () {
+        $("#example1")
+          .DataTable({
+            responsive: true,
+            lengthChange: false,
+            autoWidth: false,
+            buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+          })
+          .buttons()
+          .container()
+          .appendTo("#example1_wrapper .col-md-6:eq(0)");
+        $("#example2").DataTable({
+          paging: true,
+          lengthChange: false,
+          searching: false,
+          ordering: true,
+          info: true,
+          autoWidth: false,
+          responsive: true,
+        });
+      });
+    </script>
+  </body>
+</html>
