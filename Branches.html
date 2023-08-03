@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/Sidebar.css" />
     <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
     <link rel="stylesheet" href="./css/Common.css" />
     <link rel="stylesheet" href="./css/MediaQueries.css" />
     <!-- Bootstrap css link -->
@@ -580,9 +581,53 @@
             data-bs-target="#staticBackdrop"
           >
             <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">Branch List</p>
+            <p class="ms-1">New Branch</p>
           </button>
         </div>
+
+        <div class="filter_section mb-3">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Branch Code</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Branch Name</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Select City</label>
+                <select class="form-select">
+                  <option>Pune</option>
+                  <option>Mumbai</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Select State</label>
+                <select class="form-select">
+                  <option>Maharashtra</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Opening Date</label>
+                <input class="form-control" type="date" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button type="button" class="search-btn bg-success">Search</button>
+          </div>
+        </div>
+
         <table id="example2" class="table table-bordered table-hover">
           <thead>
             <tr>
@@ -611,9 +656,6 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
                 </div>
               </td>
             </tr>
@@ -633,9 +675,6 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
                 </div>
               </td>
             </tr>
@@ -653,9 +692,6 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
@@ -675,9 +711,6 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
                 </div>
               </td>
             </tr>
@@ -695,9 +728,6 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
@@ -717,9 +747,6 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
                 </div>
               </td>
             </tr>
@@ -737,9 +764,6 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
@@ -759,9 +783,6 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
                 </div>
               </td>
             </tr>
@@ -779,9 +800,6 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
@@ -801,9 +819,6 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
                 </div>
               </td>
             </tr>
@@ -821,9 +836,6 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
@@ -857,7 +869,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Add Branch List
+              Add Branch
             </h1>
             <button
               type="button"
