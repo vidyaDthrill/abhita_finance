@@ -105,7 +105,8 @@
 }
 
 .accordion_sidebar_icons {
-  font-size: 7px;
+  font-size: 13px !important;
+  transform: rotate(90deg) !important;
 }
 
 .bg_color {
