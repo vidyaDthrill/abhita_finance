@@ -581,111 +581,456 @@
                 <div class="tabs">
                   <input type="radio" name="tabs" id="tab1" checked="checked" />
                   <label for="tab1" class="tab_label">Cibil Score</label>
-                  <div class="tab mt-3 filter_section">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Minimum Cibil Score</label>
-                          <input class="form-control" type="text" />
+
+                  <div class="tab mt-3">
+                    <div class="filter_section mb-3">
+                      <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label"
+                              >Minimum Cibil Score</label
+                            >
+                            <input class="form-control" type="text" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Effective Date</label>
-                          <input class="form-control" type="date" />
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Effective Date</label>
+                            <input class="form-control" type="date" />
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="d-flex justify-content-center mt-4">
+                            <button
+                              type="button"
+                              class="cancel-btn w-100 rounded-2"
+                            >
+                              Add
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                      <button type="button" class="cancel-btn">Save</button>
-                    </div>
+                    <table
+                      id="example2"
+                      class="table table-bordered table-hover"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Minimum Cibil Score</th>
+                          <th>Effective Date</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>340</td>
+                          <td>09/10/2022</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>400</td>
+                          <td>12/02/2023</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>500</td>
+                          <td>02/07/2023</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>550</td>
+                          <td>11/12/2022</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>420</td>
+                          <td>09/10/2022</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
 
                   <input type="radio" name="tabs" id="tab2" />
                   <label for="tab2" class="tab_label">Group Limit</label>
-                  <div class="tab mt-3 filter_section">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Minimum Group Count</label>
-                          <input class="form-control" type="text" />
+                  <div class="tab mt-3">
+                    <div class="filter_section mb-3">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label"
+                              >Minimum Group Count</label
+                            >
+                            <input class="form-control" type="text" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Maximum Group Count</label>
-                          <input class="form-control" type="text" />
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label"
+                              >Maximum Group Count</label
+                            >
+                            <input class="form-control" type="text" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Is Active</label>
-                          <select class="form-select">
-                            <option>Yes</option>
-                            <option>No</option>
-                          </select>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Effective Date</label>
+                            <input class="form-control" type="date" />
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                          <div class="d-flex justify-content-center mt-4">
+                            <button
+                              type="button"
+                              class="cancel-btn w-100 rounded-2"
+                            >
+                              Add
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                      <button type="button" class="cancel-btn">Save</button>
-                    </div>
+                    <table
+                      id="example2"
+                      class="table table-bordered table-hover"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Minimum Group Count</th>
+                          <th>Maximum Group Count</th>
+                          <th>Effective Date</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>7</td>
+                          <td>12</td>
+                          <td>09/10/2022</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
 
                   <input type="radio" name="tabs" id="tab3" />
                   <label for="tab3" class="tab_label">Reject Reason</label>
-                  <div class="tab mt-3 filter_section">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Reject Reason</label>
-                          <select class="form-select">
-                            <option>-- Select Reject Reason --</option>
-                          </select>
+                  <div class="tab mt-3">
+                    <div class="filter_section mb-3">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Reject Reason</label>
+                            <input class="form-control" type="text" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Other</label>
-                          <input class="form-control" type="text" />
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="d-flex justify-content-center mt-4">
+                            <button
+                              type="button"
+                              class="cancel-btn w-100 rounded-2"
+                            >
+                              Add
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                      <button type="button" class="cancel-btn">Save</button>
-                    </div>
+                    <table
+                      id="example2"
+                      class="table table-bordered table-hover"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Reject Reason</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Cibil Score below 300</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>House Verification not proper</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Documents not Proper</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Exist loan above 1,50,000 Lacs</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+
                   <input type="radio" name="tabs" id="tab4" />
                   <label for="tab4" class="tab_label">Financial Year</label>
-                  <div class="tab mt-3 filter_section">
-                    <div class="row">
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">Year</label>
-                          <input class="form-control" type="text" />
+
+                  <div class="tab mt-3">
+                    <div class="filter_section mb-3">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Year</label>
+                            <input class="form-control" type="text" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">From Date</label>
-                          <input class="form-control" type="date" />
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">From Date</label>
+                            <input class="form-control" type="date" />
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="mb-2">
-                          <label class="form-label">To Date</label>
-                          <input class="form-control" type="date" />
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">To Date</label>
+                            <input class="form-control" type="date" />
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-12 col-sm-12">
+                          <div class="d-flex justify-content-center mt-4">
+                            <button
+                              type="button"
+                              class="cancel-btn w-100 rounded-2"
+                            >
+                              Add
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                      <button type="button" class="cancel-btn">Save</button>
-                    </div>
+                    <table
+                      id="example2"
+                      class="table table-bordered table-hover"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Year</th>
+                          <th>From Date</th>
+                          <th>To Date</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2 Years</td>
+                          <td>11/12/2021</td>
+                          <td>11/12/2024</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1 Year</td>
+                          <td>01/04/2022</td>
+                          <td>01/04/2023</td>
+                          <td>Active</td>
+                          <td>
+                            <div class="d-flex">
+                              <div class="ed_div">
+                                <i class="bi bi-eye eye_icon"></i>
+                              </div>
+                              <div class="ed_div">
+                                <i class="bi bi-pencil-square edit_icon"></i>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
 
                   <input type="radio" name="tabs" id="tab5" />
                   <label for="tab5" class="tab_label">Designation</label>
                   <div class="tab mt-3">
+                    <div class="filter_section mb-3">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Designation</label>
+                            <select class="form-select">
+                              <option>AM</option>
+                              <option>BM</option>
+                              <option>CSR</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="mb-2">
+                            <label class="form-label">Status</label>
+                            <select class="form-select">
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <div class="d-flex justify-content-center mt-4">
+                            <button
+                              type="button"
+                              class="cancel-btn w-100 rounded-2"
+                            >
+                              Add
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <table
                       id="example2"
                       class="table table-bordered table-hover"

@@ -204,7 +204,8 @@ td {
 .form-control:focus,
 .form-select:focus {
   box-shadow: none;
-  border-color: #000249;
+  border-color: #000249 !important;
+  box-shadow: none !important;
 }
 
 .form-control::placeholder {
