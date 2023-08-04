@@ -64,7 +64,7 @@
 /* Header */
 .header_menu {
   color: #000 !important;
-  font-size: 20px;
+  font-size: 25px;
 }
 .mobile_view {
   display: none;
@@ -83,7 +83,7 @@
   letter-spacing: 0.3px;
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 16px;
   transition: all 0.5s;
   padding: 10px 5px;
   border-bottom: 0.5px solid #191932;
