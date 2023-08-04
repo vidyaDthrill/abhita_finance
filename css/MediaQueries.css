@@ -27,8 +27,10 @@
     display: none;
   }
   .login-outer-wrapper {
-    align-items: unset;
-    height: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
   }
   .login-heading h4 {
     margin-top: 0 !important;
