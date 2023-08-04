@@ -1,0 +1,96 @@
+.login-outer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-inner-wrapper {
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px 0 rgba(67, 89, 113, 0.12);
+  border-radius: 10px;
+}
+
+.login-vector {
+  /* background-color: #aadfff; */
+  /* display: flex;
+      align-items: center; */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0 20px;
+}
+
+.login-form {
+  /* background-color: #fff; */
+}
+
+.align-login-content {
+  display: flex;
+  place-items: center;
+}
+
+.login-vector .login-img {
+  width: 500px;
+  height: fit-content;
+}
+
+.login-logo {
+  width: 200px;
+}
+
+.login-logo-section {
+  background-color: #000249;
+  width: 100%;
+  height: 100px;
+}
+
+.login-heading {
+  margin-bottom: 35px;
+}
+
+.login-heading h4 {
+  color: #000249 !important;
+  font-weight: 700 !important;
+  margin-top: 30px !important;
+  font-size: 30px !important;
+}
+
+.forget-pass {
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: 600;
+  text-align: end;
+  cursor: pointer;
+}
+
+.forget-pass:hover {
+  color: #000249;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.show-hide {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  padding: 2px 3px;
+  color: #3e3e3e;
+  border: none;
+  background-color: transparent;
+}
+
+.create-acc {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.create-acc span {
+  color: #dd1717;
+  cursor: pointer;
+}
+
+.create-acc:hover span {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
