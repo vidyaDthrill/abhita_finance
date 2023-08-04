@@ -43,11 +43,16 @@
     opacity: 0.8;
   }
 
+  .header_profile_wrapper {
+    width: 45px;
+    height: 45px;
+  }
+
   .header_profile_name p:first-child {
-    font-size: 17px;
+    font-size: 18px;
   }
   .header_profile_name p:last-child {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -91,7 +96,7 @@
   letter-spacing: 0.3px;
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   transition: all 0.5s;
   padding: 10px 5px;
   border-bottom: 0.5px solid #191932;
