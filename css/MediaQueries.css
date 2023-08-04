@@ -35,6 +35,12 @@
   .login-heading h4 {
     margin-top: 0 !important;
   }
+
+  .header_profile,
+  .header_profile_name p {
+    color: #fff;
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: 768px) {
@@ -85,6 +91,7 @@
   margin: 0;
   padding-left: 10px;
 }
+
 .offcanvas-body {
   padding: 0 !important;
 }
