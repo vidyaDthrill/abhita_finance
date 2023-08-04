@@ -30,6 +30,9 @@
     align-items: unset;
     height: auto;
   }
+  .login-heading h4 {
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
