@@ -24,12 +24,12 @@
     padding: 20px;
   }
   .login-vector .login-img {
-    width: 100%;
+    display: none;
   }
   .login-outer-wrapper {
     align-items: unset;
     height: auto;
-}
+  }
 }
 
 @media (max-width: 768px) {
