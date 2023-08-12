@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/Sidebar.css" />
     <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
     <link rel="stylesheet" href="./css/Common.css" />
     <link rel="stylesheet" href="./css/MediaQueries.css" />
     <!-- Bootstrap css link -->
@@ -688,7 +689,7 @@
       <div class="content">
         <div class="d-flex justify-content-between align-items-center pb-3">
           <div class="">
-            <p>Home / Customer / <strong>Customers Group</strong></p>
+            <p>Home / Master / <strong>Bank</strong></p>
           </div>
           <button
             class="add-btn d-flex align-items-center"
@@ -696,23 +697,73 @@
             data-bs-target="#staticBackdrop"
           >
             <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">Customer Group List</p>
+            <p class="ms-1">New Bank</p>
           </button>
         </div>
+
+        <div class="filter_section mb-3">
+          <div class="row">
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Branch Code</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Branch Name</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Select City</label>
+                <select class="form-select">
+                  <option>Pune</option>
+                  <option>Mumbai</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Select State</label>
+                <select class="form-select">
+                  <option>Maharashtra</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Opening Date</label>
+                <input class="form-control" type="date" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-2">
+            <button type="button" class="search-btn">Search</button>
+          </div>
+        </div>
+
         <table id="example2" class="table table-bordered table-hover">
           <thead>
             <tr>
-              <th>Group Code</th>
-              <th>Group Name</th>
-              <th>Status</th>
+              <th>Branch Code</th>
+              <th>Branch Name</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Opening Date</th>
+              <th>Contact No.</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Gr101</td>
-              <td>GroupName1</td>
-              <td>Active</td>
+              <td>Br101</td>
+              <td>Pune</td>
+              <td>New Sangvi</td>
+              <td>Pune</td>
+              <td>21/09/2023</td>
+              <td>8687645321</td>
               <td>
                 <div class="d-flex">
                   <div class="ed_div">
@@ -721,16 +772,35 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Br102</td>
+              <td>Mumbai</td>
+              <td>Kharghar</td>
+              <td>Maharashtra</td>
+              <td>19/12/2023</td>
+              <td>9087645341</td>
+              <td>
+                <div class="d-flex">
                   <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                    <i class="bi bi-eye eye_icon"></i>
+                  </div>
+                  <div class="ed_div">
+                    <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr102</td>
-              <td>GroupName2</td>
-              <td>Active</td>
+              <td>Br103</td>
+              <td>Buldhana</td>
+              <td>Buldhana</td>
+              <td>Maharashtra</td>
+              <td>21/09/2023</td>
+              <td>9884445321</td>
               <td>
                 <div class="d-flex">
                   <div class="ed_div">
@@ -738,17 +808,17 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr103</td>
-              <td>GroupName3</td>
-              <td>Active</td>
+              <td>Br104</td>
+              <td>Jalgaon</td>
+              <td>Jalgaon</td>
+              <td>Maharashtra</td>
+              <td>11/10/2023</td>
+              <td>9387645321</td>
               <td>
                 <div class="d-flex">
                   <div class="ed_div">
@@ -756,17 +826,17 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr104</td>
-              <td>GroupName4</td>
-              <td>Active</td>
+              <td>Br105</td>
+              <td>Muktainagar</td>
+              <td>Muktainagar</td>
+              <td>Maharashtra</td>
+              <td>26/03/2023</td>
+              <td>9021645321</td>
               <td>
                 <div class="d-flex">
                   <div class="ed_div">
@@ -774,17 +844,17 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr105</td>
-              <td>GroupName5</td>
-              <td>Active</td>
+              <td>Br106</td>
+              <td>Raver</td>
+              <td>Raver</td>
+              <td>Maharashtra</td>
+              <td>07/60/2023</td>
+              <td>9887645321</td>
               <td>
                 <div class="d-flex">
                   <div class="ed_div">
@@ -792,17 +862,17 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr106</td>
-              <td>GroupName6</td>
-              <td>Active</td>
+              <td>Br107</td>
+              <td>Pune</td>
+              <td>Pimple Gurav</td>
+              <td>Maharashtra</td>
+              <td>17/08/2023</td>
+              <td>9187645321</td>
               <td>
                 <div class="d-flex">
                   <div class="ed_div">
@@ -811,8 +881,77 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Br108</td>
+              <td>Mumbai</td>
+              <td>Kalyan</td>
+              <td>Maharashtra</td>
+              <td>21/09/2023</td>
+              <td>8087645321</td>
+              <td>
+                <div class="d-flex">
                   <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                    <i class="bi bi-eye eye_icon"></i>
+                  </div>
+                  <div class="ed_div">
+                    <i class="bi bi-pencil-square edit_icon"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Br109</td>
+              <td>Buldhana</td>
+              <td>Buldhana</td>
+              <td>Maharashtra</td>
+              <td>13/01/2023</td>
+              <td>7487645321</td>
+              <td>
+                <div class="d-flex">
+                  <div class="ed_div">
+                    <i class="bi bi-eye eye_icon"></i>
+                  </div>
+                  <div class="ed_div">
+                    <i class="bi bi-pencil-square edit_icon"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Br110</td>
+              <td>Bhusawal</td>
+              <td>Bhusawal</td>
+              <td>Maharashtra</td>
+              <td>02/10/2023</td>
+              <td>9187645321</td>
+              <td>
+                <div class="d-flex">
+                  <div class="ed_div">
+                    <i class="bi bi-eye eye_icon"></i>
+                  </div>
+                  <div class="ed_div">
+                    <i class="bi bi-pencil-square edit_icon"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Br111</td>
+              <td>Amravati</td>
+              <td>Amravati</td>
+              <td>Maharashtra</td>
+              <td>17/12/2022</td>
+              <td>9387645321</td>
+              <td>
+                <div class="d-flex">
+                  <div class="ed_div">
+                    <i class="bi bi-eye eye_icon"></i>
+                  </div>
+                  <div class="ed_div">
+                    <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
                 </div>
               </td>
@@ -842,12 +981,10 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-30">
+      <div class="modal-dialog modal-dialog-60">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Add Customer Group
-            </h1>
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Bank</h1>
             <button
               type="button"
               class="btn-close"
@@ -857,28 +994,99 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="mb-2">
-                  <label class="form-label">Branch</label>
+                  <label class="form-label">Branch Code</label>
+                  <input class="form-control" type="text" disabled />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Location</label>
+                  <select class="form-select">
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Pin Code</label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Opening Date</label>
+                  <input class="form-control" type="date" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Email ID</label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Address</label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Contact No.</label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">City</label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Select State</label>
                   <select class="form-select">
                     <option>Maharashta</option>
                   </select>
                 </div>
               </div>
-              <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="mb-2">
-                  <label class="form-label">Customer</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
+                  <label class="form-label">Country</label>
+                  <input class="form-control" type="text" />
                 </div>
               </div>
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Group</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="ps-2">
+                  <label class="form-label">Status</label>
+                  <div class="d-flex">
+                    <div class="form-check pe-5">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Status"
+                        id="StatusActive"
+                        checked
+                      />
+                      <label class="form-check-label" for="StatusActive">
+                        Active
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Status"
+                        id="StatusInactive"
+                      />
+                      <label class="form-check-label" for="StatusInactive">
+                        Inactive
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

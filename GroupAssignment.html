@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/Sidebar.css" />
     <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
     <link rel="stylesheet" href="./css/Common.css" />
     <link rel="stylesheet" href="./css/MediaQueries.css" />
     <!-- Bootstrap css link -->
@@ -688,7 +689,7 @@
       <div class="content">
         <div class="d-flex justify-content-between align-items-center pb-3">
           <div class="">
-            <p>Home / Customer / <strong>Customers Group</strong></p>
+            <p>Home / <strong>Group Assignment</strong></p>
           </div>
           <button
             class="add-btn d-flex align-items-center"
@@ -696,126 +697,141 @@
             data-bs-target="#staticBackdrop"
           >
             <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">Customer Group List</p>
+            <p class="ms-1">New Group</p>
           </button>
         </div>
+
+        <div class="filter_section mb-3">
+          <div class="row">
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Select Branch</label>
+                <select class="form-select">
+                  <option>Pune</option>
+                  <option>Mumbai</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Select Group</label>
+                <select class="form-select">
+                  <option>Gr101</option>
+                  <option>Gr102</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <div class="d-flex justify-content-start">
+                <div class="d-flex justify-content-center mt-4 ml-2">
+                  <button type="button" class="submit-btn">Search</button>
+                </div>
+
+                <!-- <div class="d-flex justify-content-center mt-4 ml-2">
+                  <button type="button" class="submit-btn">
+                    Add New Group
+                  </button>
+                </div> -->
+                <div class="d-flex justify-content-center mt-4 ml-2">
+                  <button type="button" class="submit-btn">
+                    Send Group For Approval
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <div class="position-relative">
+            <input type="text" class="search_input" />
+            <i class="bi bi-search header_search_icon"></i>
+          </div>
+        </div>
+
         <table id="example2" class="table table-bordered table-hover">
           <thead>
             <tr>
-              <th>Group Code</th>
-              <th>Group Name</th>
-              <th>Status</th>
-              <th>Action</th>
+              <th>#</th>
+              <th>Customer Code</th>
+              <th>Customer Name</th>
+              <th>Mobile No.</th>
+              <th>Email ID</th>
+              <th>City</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Gr101</td>
-              <td>GroupName1</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
+              <td><input type="checkbox" /></td>
+              <td>cust101</td>
+              <td>Rita Roy</td>
+              <td>9876543212</td>
+              <td>Rita@gmail.com</td>
+
+              <td>Muktainagar</td>
             </tr>
             <tr>
-              <td>Gr102</td>
-              <td>GroupName2</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
+              <td><input type="checkbox" /></td>
+              <td>cust102</td>
+              <td>Neeta Patil</td>
+              <td>8974537282</td>
+              <td>neeta@gmail.com</td>
+
+              <td>Muktainagar</td>
             </tr>
             <tr>
-              <td>Gr103</td>
-              <td>GroupName3</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
+              <td><input type="checkbox" /></td>
+              <td>cust103</td>
+              <td>Sunita Shah</td>
+              <td>7858493929</td>
+              <td>sunita@gmail.com</td>
+
+              <td>Muktainagar</td>
             </tr>
             <tr>
-              <td>Gr104</td>
-              <td>GroupName4</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
+              <td><input type="checkbox" /></td>
+              <td>cust104</td>
+              <td>Bhakti Yadav</td>
+              <td>9473287344</td>
+              <td>bhakti@gmail.com</td>
+
+              <td>Muktainagar</td>
             </tr>
             <tr>
-              <td>Gr105</td>
-              <td>GroupName5</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
+              <td><input type="checkbox" /></td>
+              <td>cust105</td>
+              <td>Geeta Phalak</td>
+              <td>8784746743</td>
+              <td>geeta@gmail.com</td>
+
+              <td>Muktainagar</td>
             </tr>
             <tr>
-              <td>Gr106</td>
-              <td>GroupName6</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
+              <td><input type="checkbox" /></td>
+              <td>cust106</td>
+              <td>Sita Deshmukh</td>
+              <td>9436326734</td>
+              <td>sita@gmail.com</td>
+
+              <td>Muktainagar</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>cust107</td>
+              <td>Sonali Sonawane</td>
+              <td>97233757878</td>
+              <td>sonali@gmail.com</td>
+
+              <td>Muktainagar</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>cust108</td>
+              <td>Aaradhya Kulkarni</td>
+              <td>7858585883</td>
+              <td>aaradhya@gmail.com</td>
+
+              <td>Muktainagar</td>
             </tr>
           </tbody>
           <!-- <tfoot>
@@ -845,9 +861,7 @@
       <div class="modal-dialog modal-dialog-30">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Add Customer Group
-            </h1>
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Group</h1>
             <button
               type="button"
               class="btn-close"
@@ -859,26 +873,54 @@
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="mb-2">
+                  <label class="form-label">Group Code</label>
+                  <input class="form-control" type="text" disabled />
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="mb-2">
+                  <label class="form-label">Group Name</label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="mb-2">
                   <label class="form-label">Branch</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
+                  <input class="form-control" type="text" />
                 </div>
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="mb-2">
-                  <label class="form-label">Customer</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
+                  <label class="form-label">Group Creation Date</label>
+                  <input class="form-control" type="date" />
                 </div>
               </div>
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Group</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
+              <div class="ps-3">
+                <label class="form-label">Status</label>
+                <div class="d-flex">
+                  <div class="form-check pe-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Status"
+                      id="StatusActive"
+                      checked
+                    />
+                    <label class="form-check-label" for="StatusActive">
+                      Active
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Status"
+                      id="StatusInactive"
+                    />
+                    <label class="form-check-label" for="StatusInactive">
+                      Inactive
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

@@ -11532,8 +11532,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
   scrollbar-width: thin;
 }
 .sidebar:hover::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 10px;
+  height: 10px;
 }
 .brand-link.border-bottom-0 ~ .sidebar {
   height: calc(100% - 3.5rem);

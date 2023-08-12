@@ -1,0 +1,50 @@
+.send_back_wrapper {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+.send_back_ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.send_back_ul li {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.send_back_ul li:hover,
+.send_back_ul li:focus,
+.send_back_ul li:active {
+  background-color: #dadada;
+  padding-right: 204px;
+  padding-left: 20px;
+}
+
+.send_back_ul li p {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.-ml-3 {
+  margin-left: -10px;
+}
+
+.send_back_ul li:after {
+  content: "»";
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+  top: 7px;
+  color: #3e3e3e;
+  right: 30px;
+  transition: 0.5s;
+}
+
+.send_back_ul li:hover:after {
+  opacity: 1;
+  right: 10px;
+}

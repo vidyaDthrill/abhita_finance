@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/Abhita-Land(A).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhita Finance</title>
+
+    <link rel="stylesheet" href="./css/Sidebar.css" />
+    <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/Common.css" />
+    <link rel="stylesheet" href="./css/AddCustomer.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
+    <link rel="stylesheet" href="./css/MediaQueries.css" />
+    <!-- Bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css" />
+    <!-- DataTables -->
+    <link
+      rel="stylesheet"
+      href="./plugins/datatables-bs4/css/dataTables.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/datatables-responsive/css/responsive.bootstrap4.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/datatables-buttons/css/buttons.bootstrap4.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./dist/css/adminlte.min.css" />
+
+    <!-- Script -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <div class="logo_wrapper">
+        <img src="./images/Logo.jpg" alt="" class="logo" />
+      </div>
+
+      <div class="sidebar_menu_wrapper">
+        <ul class="sidebar_menu">
+          <li>
+            <a href="Dashboard.html">
+              <i class="bi bi-house-door sidebar_icons"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <div class="accordion accordion-flush" id="accordionMaster">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseMaster"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseMaster"
+                  >
+                    <a href="#">
+                      <i class="bi bi-plus-circle sidebar_icons"></i>
+                      <p>Master</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseMaster"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionMaster"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="Group.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Group</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="Bank.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Bank</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="Branches.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Branches</p>
+                        </a>
+                      </li>
+                      <!-- <li>
+                        <a href="Designation.html">
+                          <i class="bi  bi-hand-index-thumb accordion_sidebar_icons"></i>
+                          <p>Designation</p>
+                        </a>
+                      </li> -->
+                      <li>
+                        <a href="Location.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Location</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="User.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>User</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="LookUp.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>LookUp</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApplicationSettings.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Settings</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="accordion accordion-flush" id="accordionCustomers">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseCustomer"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseCustomer"
+                  >
+                    <a href="#">
+                      <i class="bi bi-people sidebar_icons"></i>
+                      <p>Customers</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseCustomer"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionCustomers"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="Customers.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Customers</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="CustomerGroup.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Customers Group</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="CreateGroupLoan.html">
+              <i class="bi bi-cash sidebar_icons"></i>
+              <p>Create Group Loan</p>
+            </a>
+          </li>
+          <li>
+            <a href="LoanSummary.html">
+              <i class="bi bi-currency-rupee sidebar_icons"></i>
+              <p>Loan Summary</p>
+            </a>
+          </li>
+          <li>
+            <a href="Disbursement.html">
+              <i class="bi bi-bank sidebar_icons"></i>
+              <p>Disbursement</p>
+            </a>
+          </li>
+          <li>
+            <div class="accordion accordion-flush" id="accordionCollection">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseCollection"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseCollection"
+                  >
+                    <a href="#">
+                      <i class="bi bi-collection sidebar_icons"></i>
+                      <p>Collections</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseCollection"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionCollection"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="ShowCollection.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Show Collection</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="EMICollection.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>EMI Collection</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="CustomerCollection.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>Customer Collection</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="LoanApplication.html">
+              <i class="bi bi-file-text sidebar_icons"></i>
+              <p>Loan Application</p>
+            </a>
+          </li>
+          <li>
+            <a href="HouseVerification.html">
+              <i class="bi bi-house-check sidebar_icons"></i>
+              <p>House Verification</p>
+            </a>
+          </li>
+          <li>
+            <a href="GroupAssignment.html">
+              <i class="bi bi-person-add sidebar_icons"></i>
+              <p>Group Assignment</p>
+            </a>
+          </li>
+          <li>
+            <a href="SendBack.html">
+              <i class="bi bi-arrow-left-circle sidebar_icons"></i>
+              <p>Send Back</p>
+            </a>
+          </li>
+          <li>
+            <a href="RejectedGroup.html">
+              <i class="bi bi-x-circle sidebar_icons"></i>
+              <p>Rejected Group</p>
+            </a>
+          </li>
+          <li>
+            <a href="SendGrForApproval.html">
+              <i class="bi bi-person-check sidebar_icons"></i>
+              <p>Approval Groups</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <div class="bg_color">
+      <!-- Header Start -->
+      <div class="header">
+        <div class="header_fixed">
+          <div
+            class="d-lg-flex d-md-none d-none justify-content-between align-items-center"
+          >
+            <div class="position-relative">
+              <input type="text" class="search_input" />
+              <i class="bi bi-search header_search_icon"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="dropdown">
+                <div
+                  class="d-flex align-items-center ms-3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="header_notification">
+                    <i class="bi bi-bell icon_color icon_size"></i>
+                    <div class="notification_count">5</div>
+                  </div>
+                </div>
+                <ul class="dropdown-menu notification_dropdown_list">
+                  <li>
+                    <h5 class="ps-2 py-2 text-center">15 Notifications</h5>
+                  </li>
+                  <li class="">
+                    <div class="d-flex justify-content-between px-3">
+                      <div class="d-flex">
+                        <i class="bi bi-currency-rupee icon_color"></i>
+                        <p class="ps-1 icon_color">Today Collection</p>
+                      </div>
+                      <div>
+                        <p>12,00,000</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="d-flex justify-content-between px-3">
+                      <div class="d-flex">
+                        <i class="bi bi-currency-rupee icon_color"></i>
+                        <p class="ps-1 icon_color">Pending Collection</p>
+                      </div>
+                      <div>
+                        <p>12,00,000</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center header_right_side">
+                <div class="dropdown">
+                  <div
+                    class="dropdown-toggle d-flex align-items-center ms-3"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="px-2 d-flex align-items-center">
+                      <div class="header_profile_wrapper">
+                        <i class="bi bi-person icon_color header_profile"></i>
+                      </div>
+                      <div class="header_profile_name ps-2">
+                        <p>User Name</p>
+                        <p>Designation</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="dropdown-menu dropdown-list">
+                    <li class="logout">
+                      <a href="index.html" class="d-flex px-3">
+                        <i class="bi bi-box-arrow-right icon_color"></i>
+                        <p class="ps-2">Logout</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile View -->
+          <div
+            class="d-lg-none d-flex justify-content-between align-items-center mobile_view"
+          >
+            <h4 class="mb-0">Abhita Finance</h4>
+            <i
+              class="bi bi-list header_menu"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            ></i>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="logo_wrapper">
+                <img src="./images/Logo.jpg" alt="" class="logo" />
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="mb_sidebar_menu_wrapper">
+                <div class="">
+                  <div class="d-flex align-items-center ms-3">
+                    <div class="p-3 d-flex align-items-center">
+                      <div class="header_profile_wrapper">
+                        <i class="bi bi-person header_profile"></i>
+                      </div>
+                      <div class="header_profile_name ps-2">
+                        <p class="text-white">User Name</p>
+                        <p class="text-white">Designation</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="mb_sidebar_menu">
+                  <li>
+                    <a href="Dashboard.html">
+                      <i class="bi bi-house-door sidebar_icons"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="accordion accordion-flush" id="accordionMaster">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseMaster"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseMaster"
+                          >
+                            <a href="#">
+                              <i class="bi bi-plus-circle sidebar_icons"></i>
+                              <p>Master</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseMaster"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionMaster"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="Group.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Group</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Bank</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="Branches.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Branches</p>
+                                </a>
+                              </li>
+                              <!-- <li>
+                                <a href="Designation.html">
+                                  <i class="bi  bi-hand-index-thumb accordion_sidebar_icons"></i>
+                                  <p>Designation</p>
+                                </a>
+                              </li> -->
+                              <li>
+                                <a href="Location.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Location</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="User.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>User</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="ApplicationSettings.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Settings</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionCustomers"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseCustomer"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseCustomer"
+                          >
+                            <a href="#">
+                              <i class="bi bi-people sidebar_icons"></i>
+                              <p>Customers</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseCustomer"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionCustomers"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="Customers.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Customers</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="CustomerGroup.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Customers Group</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="CreateGroupLoan.html">
+                      <i class="bi bi-cash sidebar_icons"></i>
+                      <p>Create Group Loan</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="LoanSummary.html">
+                      <i class="bi bi-currency-rupee sidebar_icons"></i>
+                      <p>Loan Summary</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="Disbursement.html">
+                      <i class="bi bi-bank sidebar_icons"></i>
+                      <p>Disbursement</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionCollection"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseCollection"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseCollection"
+                          >
+                            <a href="#">
+                              <i class="bi bi-collection sidebar_icons"></i>
+                              <p>Collections</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseCollection"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionCollection"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="ShowCollection.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Show Collection</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="EMICollection.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>EMI Collection</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="CustomerCollection.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>Customer Collection</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="bi bi-box-arrow-right"></i>
+                      <p onclick="Index()">Logout</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+
+      <!-- Content Start -->
+      <div class="content">
+        <h1 class="modal-title">Loan Application</h1>
+
+        <hr />
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-main-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-main"
+              type="button"
+              role="tab"
+              aria-controls="pills-main"
+              aria-selected="true"
+            >
+              Main
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-documents-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-documents"
+              type="button"
+              role="tab"
+              aria-controls="pills-documents"
+              aria-selected="false"
+            >
+              Documents
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-bank-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-bank"
+              type="button"
+              role="tab"
+              aria-controls="pills-bank"
+              aria-selected="false"
+            >
+              Bank Details
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-reference-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-reference"
+              type="button"
+              role="tab"
+              aria-controls="pills-reference"
+              aria-selected="false"
+            >
+              Reference
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-nominee-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-nominee"
+              type="button"
+              role="tab"
+              aria-controls="pills-nominee"
+              aria-selected="false"
+            >
+              Nominee & Family
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-loan-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-loan"
+              type="button"
+              role="tab"
+              aria-controls="pills-loan"
+              aria-selected="false"
+            >
+              Loan
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-main"
+            role="tabpanel"
+            aria-labelledby="pills-main-tab"
+            tabindex="0"
+          >
+            <div class="tab mt-3 filter_section">
+              <!-- Group Details start -->
+              <h4 class="section_wise_heading mt-3">Group Details</h4>
+
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Branch Name</label>
+                    <select class="form-select">
+                      <option>Pune</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Group Code</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Group Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <!-- Group Details end -->
+
+              <!-- Basic Details start -->
+              <h4 class="section_wise_heading mt-3">Basic Details</h4>
+
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Customer ID</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">First Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Father Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Mother Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Spouse Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Marital Status</label>
+                    <select class="form-select">
+                      <option>Single</option>
+                      <option>Married</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Date of Birth</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+              </div>
+              <!-- Basic Details end -->
+
+              <!-- Contact Details start -->
+              <h4 class="section_wise_heading mt-3">Contact Details</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Mobile No.</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Alternative Mobile No.</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Email ID</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <!-- Contact Details end -->
+
+              <!-- Address Details start -->
+              <h4 class="section_wise_heading mt-3">Address Details</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Address</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Area</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">City</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">State</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Country</label>
+                    <select class="form-select" disabled>
+                      <option>India</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Pincode</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <!-- Address Details end -->
+
+              <!-- Other Details start -->
+              <h4 class="section_wise_heading mt-3">Other Details</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Religion</label>
+                    <select class="form-select">
+                      <option>Hindu</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Cast</label>
+                    <select class="form-select">
+                      <option>OBC</option>
+                      <option>Open</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Other Details end -->
+
+              <!-- Co-Applicant Details start -->
+              <div class="row my-3">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label"> Co-Applicant Details</label>
+                    <div class="d-flex">
+                      <div class="form-check pe-5">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="Status"
+                          id="StatusYes"
+                          onclick="ShowCoapplicant()"
+                          checked
+                        />
+                        <label class="form-check-label" for="StatusYes">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="Status"
+                          id="StatusNo"
+                          onclick="HideCoapplicant()"
+                        />
+                        <label class="form-check-label" for="StatusNo">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="coapplicant">
+                <h4 class="section_wise_heading mt-3">Co-Applicant Details</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">First Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Last Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Relation</label>
+                      <select class="form-select">
+                        <option>Mother</option>
+                        <option>Father</option>
+                        <option>Sister</option>
+                        <option>Brother</option>
+                        <option>Son</option>
+                        <option>Wife</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Date of Birth</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Mobile No.</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Co-Applicant Address Details -->
+                <h4 class="section_wise_heading mt-3">
+                  Co-Applicant Address Details
+                </h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Address</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Area</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">City</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">State</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Country</label>
+                      <select class="form-select" disabled>
+                        <option>India</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Pincode</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <input type="checkbox" />
+                <span class="ps-1 fs-6">Same as Applicant</span>
+              </div>
+              <!-- Co-Applicant Details end -->
+
+              <div class="d-flex justify-content-end">
+                <button type="button" class="submit-btn">Save</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-documents"
+            role="tabpanel"
+            aria-labelledby="pills-documents-tab"
+            tabindex="0"
+          >
+            <div class="filter_section">
+              <h4 class="section_wise_heading mt-3">Upload Documents</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Document Type</label>
+                    <select class="form-select">
+                      <option>Applicant Photo</option>
+                      <option>Co-Applicant Photo</option>
+                      <option>Aadhar Card</option>
+                      <option>Pan Card</option>
+                      <option>Voter Card</option>
+                      <option>Ration Card</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Document Number</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Upload Document</label>
+                    <input class="form-control" type="file" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-2 mb-5">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="add-btn">Add New</button>
+                </div>
+                <div class="d-flex justify-content-start">
+                  <button type="button" class="submit-btn">Save</button>
+                </div>
+              </div>
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Sr. No.</th>
+                    <th>Document Type</th>
+                    <th>Document Number</th>
+                    <th>Document File</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Pan Card</td>
+                    <td>KCNAC7173L</td>
+                    <td>PanCard.pdf</td>
+                    <td>
+                      <div class="d-flex">
+                        <div class="ed_div">
+                          <i class="bi bi-eye eye_icon"></i>
+                        </div>
+                        <div class="ed_div">
+                          <i class="bi bi-pencil-square edit_icon"></i>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Aadhar Card</td>
+                    <td>9876 4567 4317</td>
+                    <td>AadharCard.pdf</td>
+                    <td>
+                      <div class="d-flex">
+                        <div class="ed_div">
+                          <i class="bi bi-eye eye_icon"></i>
+                        </div>
+                        <div class="ed_div">
+                          <i class="bi bi-pencil-square edit_icon"></i>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-bank"
+            role="tabpanel"
+            aria-labelledby="pills-bank-tab"
+            tabindex="0"
+          >
+            <div class="filter_section">
+              <h4 class="section_wise_heading mt-3">Bank Details</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Account No.</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Confirm Account No.</label>
+                    <input class="form-control" type="password" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">IFSC Code</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Bank Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Branch</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Name On Account</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Bank Address</label>
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="submit-btn">Save</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-reference"
+            role="tabpanel"
+            aria-labelledby="pills-reference-tab"
+            tabindex="0"
+          >
+            <div class="filter_section">
+              <h4 class="section_wise_heading mt-3">Reference</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">First Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Date of Birth</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Relation</label>
+                    <select class="form-select">
+                      <option>Mother</option>
+                      <option>Father</option>
+                      <option>Sister</option>
+                      <option>Brother</option>
+                      <option>Son</option>
+                      <option>Wife</option>
+                      <option>Friend</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Mobile No.</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Address</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Area</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">City</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">State</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Country</label>
+                    <select class="form-select" disabled>
+                      <option>India</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Pincode</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="submit-btn">Save</button>
+              </div>
+              <!-- <h4 class="section_wise_heading mt-3">Reference Details</h4> -->
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Relation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rajendra Kumar</td>
+                    <td>67</td>
+                    <td>Father</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-nominee"
+            role="tabpanel"
+            aria-labelledby="pills-nominee-tab"
+            tabindex="0"
+          >
+            <div class="filter_section">
+              <h4 class="section_wise_heading mt-3">Nominee & Family</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">First Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Last Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Date of Birth</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Nominee Relation</label>
+                    <select class="form-select">
+                      <option>Mother</option>
+                      <option>Father</option>
+                      <option>Sister</option>
+                      <option>Brother</option>
+                      <option>Son</option>
+                      <option>Wife</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Mobile No.</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Address</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Area</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">City</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">State</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Country</label>
+                    <select class="form-select" disabled>
+                      <option>India</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Pincode</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <input type="checkbox" />
+                  <span class="ps-1 fs-6">Same as Applicant</span>
+                </div>
+              </div>
+              <div class="my-3">
+                <input type="checkbox" />
+                <span class="ps-1 fs-6">IS NOMINEE</span>
+              </div>
+              <div class="d-flex justify-content-end my-3">
+                <button type="button" class="submit-btn">Save</button>
+              </div>
+              <!-- <h4 class="section_wise_heading mt-3">Nominee Details</h4> -->
+              <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Nominee Name</th>
+                    <th>Age</th>
+                    <th>Nominee Relation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rajendra Kumar</td>
+                    <td>67</td>
+                    <td>Father</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-loan"
+            role="tabpanel"
+            aria-labelledby="pills-loan-tab"
+            tabindex="0"
+          >
+            <div class="tab mt-3 filter_section">
+              <h4 class="section_wise_heading mt-3">Loan</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Loan Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Loan Sanction Date</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Name of Activity</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Rate of Interest</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Consultancy Charges</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Deduction Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Final Saction Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Insurance Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Processing Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="section_wise_heading mt-3">Insurance</h4>
+              <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Insurance Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Policy Company Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Policy Name</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Policy Number</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Policy Start Date</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Policy End Date</label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Policy Amount</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">EMI Start Date</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">EMI End Date</label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="submit-btn">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+
+    <!-- jQuery -->
+    <script src="./plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="./dist/js/demo.js"></script>
+
+    <script>
+      function Index() {
+        window.open("Index.html", "_self");
+      }
+    </script>
+    <script>
+      var x = document.getElementById("coapplicant");
+      function ShowCoapplicant() {
+        if (x.style.display == "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function HideCoapplicant() {
+        if (x.style.display == "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -3,6 +3,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 3px !important;
+}
+
 .row > * {
   margin: 0;
   padding: 0;
@@ -148,7 +152,6 @@ td {
 
 .cancel-btn {
   background-color: #dd1717;
-  text-transform: uppercase;
 }
 
 .cancel-btn:hover {
@@ -157,12 +160,15 @@ td {
 
 .submit-btn {
   background-color: #000249;
-  text-transform: uppercase;
 }
 
 .submit-btn:hover {
   background-color: #dd1717;
 }
+.search-btn {
+  background-color: #000249;
+}
+
 
 .form-label {
   font-size: 12px;
@@ -262,4 +268,17 @@ textarea:focus {
 
 hr {
   background-color: rgb(194, 194, 194);
+}
+
+.btn-close:focus {
+  box-shadow: none !important;
+}
+
+.logout a {
+  font-size: 16px;
+  color: #3e3e3e;
+}
+
+.logout a:hover{
+  color: #3e3e3e;
 }

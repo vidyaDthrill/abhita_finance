@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/Sidebar.css" />
     <link rel="stylesheet" href="./css/Header.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
     <link rel="stylesheet" href="./css/Common.css" />
     <link rel="stylesheet" href="./css/MediaQueries.css" />
     <!-- Bootstrap css link -->
@@ -688,30 +689,118 @@
       <div class="content">
         <div class="d-flex justify-content-between align-items-center pb-3">
           <div class="">
-            <p>Home / Customer / <strong>Customers Group</strong></p>
+            <p>Home / Master / <strong>LookUp</strong></p>
           </div>
           <button
             class="add-btn d-flex align-items-center"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            onclick="AddLookUp()"
           >
             <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">Customer Group List</p>
+            <p class="ms-1">New LookUp</p>
           </button>
         </div>
+
+        <div class="filter_section mb-3">
+          <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">LookUp Type</label>
+                <select class="form-select">
+                  <option>Designation</option>
+                  <option>Rejection Reason</option>
+                  <option>Nominee</option>
+                  <option>Relation</option>
+                  <option>City</option>
+                  <option>State</option>
+                  <option>Cast</option>
+                  <option>Religion</option>
+                  <option>Marital Status</option>
+                  <option>Document Type</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="d-flex justify-content-start mt-4">
+                <button type="button" class="search-btn">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter_section mb-3" id="AddLookup" style="display: none">
+          <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">LookUp Type</label>
+                <select class="form-select">
+                  <option>Designation</option>
+                  <option>Rejection Reason</option>
+                  <option>Nominee</option>
+                  <option>Relation</option>
+                  <option>City</option>
+                  <option>State</option>
+                  <option>Cast</option>
+                  <option>Religion</option>
+                  <option>Marital Status</option>
+                  <option>Document Type</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">LookUp Name</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="ps-2">
+                <label class="form-label">Status</label>
+                <div class="d-flex">
+                  <div class="form-check pe-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Status"
+                      id="StatusActive"
+                    />
+                    <label class="form-check-label" for="StatusActive">
+                      Active
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="Status"
+                      id="StatusInactive"
+                      checked
+                    />
+                    <label class="form-check-label" for="StatusInactive">
+                      Inactive
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="d-flex justify-content-start mt-4">
+                <button type="button" class="search-btn">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <table id="example2" class="table table-bordered table-hover">
           <thead>
             <tr>
-              <th>Group Code</th>
-              <th>Group Name</th>
+              <th>Designation</th>
               <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Gr101</td>
-              <td>GroupName1</td>
+              <td>Senior CSR</td>
               <td>Active</td>
               <td>
                 <div class="d-flex">
@@ -720,16 +809,12 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr102</td>
-              <td>GroupName2</td>
+              <td>CSR</td>
               <td>Active</td>
               <td>
                 <div class="d-flex">
@@ -739,15 +824,26 @@
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>AM</td>
+              <td>Active</td>
+              <td>
+                <div class="d-flex">
                   <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                    <i class="bi bi-eye eye_icon"></i>
+                  </div>
+                  <div class="ed_div">
+                    <i class="bi bi-pencil-square edit_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr103</td>
-              <td>GroupName3</td>
+              <td>BM</td>
               <td>Active</td>
               <td>
                 <div class="d-flex">
@@ -756,16 +852,12 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
-              <td>Gr104</td>
-              <td>GroupName4</td>
+              <td>Super Admin</td>
               <td>Active</td>
               <td>
                 <div class="d-flex">
@@ -774,45 +866,6 @@
                   </div>
                   <div class="ed_div">
                     <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Gr105</td>
-              <td>GroupName5</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Gr106</td>
-              <td>GroupName6</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
                   </div>
                 </div>
               </td>
@@ -830,69 +883,6 @@
         </table>
       </div>
       <!-- Content End -->
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-30">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Add Customer Group
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Branch</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Customer</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Group</label>
-                  <select class="form-select">
-                    <option>Maharashta</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="cancel-btn" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button type="button" class="submit-btn" onClick="{handleSubmit}">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- jQuery -->
@@ -938,6 +928,17 @@
           responsive: true,
         });
       });
+    </script>
+    <script>
+      var x = document.getElementById("AddLookup");
+
+      function AddLookUp() {
+        if (x.style.display == "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
     </script>
   </body>
 </html>

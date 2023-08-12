@@ -103,7 +103,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="Bank.html">
                           <i
                             class="bi bi-hand-index-thumb accordion_sidebar_icons"
                           ></i>
@@ -138,6 +138,14 @@
                             class="bi bi-hand-index-thumb accordion_sidebar_icons"
                           ></i>
                           <p>User</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="LookUp.html">
+                          <i
+                            class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                          ></i>
+                          <p>LookUp</p>
                         </a>
                       </li>
                       <li>
@@ -275,6 +283,42 @@
               </div>
             </div>
           </li>
+          <li>
+            <a href="LoanApplication.html">
+              <i class="bi bi-file-text sidebar_icons"></i>
+              <p>Loan Application</p>
+            </a>
+          </li>
+          <li>
+            <a href="HouseVerification.html">
+              <i class="bi bi-house-check sidebar_icons"></i>
+              <p>House Verification</p>
+            </a>
+          </li>
+          <li>
+            <a href="GroupAssignment.html">
+              <i class="bi bi-person-add sidebar_icons"></i>
+              <p>Group Assignment</p>
+            </a>
+          </li>
+          <li>
+            <a href="SendBack.html">
+              <i class="bi bi-arrow-left-circle sidebar_icons"></i>
+              <p>Send Back</p>
+            </a>
+          </li>
+          <li>
+            <a href="RejectedGroup.html">
+              <i class="bi bi-x-circle sidebar_icons"></i>
+              <p>Rejected Group</p>
+            </a>
+          </li>
+          <li>
+            <a href="SendGrForApproval.html">
+              <i class="bi bi-person-check sidebar_icons"></i>
+              <p>Approval Groups</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -292,9 +336,44 @@
               <i class="bi bi-search header_search_icon"></i>
             </div>
             <div class="d-flex justify-content-between align-items-center">
-              <div class="header_notification">
-                <i class="bi bi-bell icon_color icon_size"></i>
-                <div class="notification_count">5</div>
+              <div class="dropdown">
+                <div
+                  class="d-flex align-items-center ms-3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="header_notification">
+                    <i class="bi bi-bell icon_color icon_size"></i>
+                    <div class="notification_count">5</div>
+                  </div>
+                </div>
+                <ul class="dropdown-menu notification_dropdown_list">
+                  <li>
+                    <h5 class="ps-2 py-2 text-center">15 Notifications</h5>
+                  </li>
+                  <li class="">
+                    <div class="d-flex justify-content-between px-3">
+                      <div class="d-flex">
+                        <i class="bi bi-currency-rupee icon_color"></i>
+                        <p class="ps-1 icon_color">Today Collection</p>
+                      </div>
+                      <div>
+                        <p>12,00,000</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="">
+                    <div class="d-flex justify-content-between px-3">
+                      <div class="d-flex">
+                        <i class="bi bi-currency-rupee icon_color"></i>
+                        <p class="ps-1 icon_color">Pending Collection</p>
+                      </div>
+                      <div>
+                        <p>12,00,000</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <div class="d-flex align-items-center header_right_side">
                 <div class="dropdown">
@@ -314,17 +393,13 @@
                     </div>
                   </div>
                   <ul class="dropdown-menu dropdown-list">
-                    <li>
-                      <a class="dropdown-item d-flex" href="#">
+                    <li class="logout">
+                      <a href="index.html" class="d-flex px-3">
                         <i class="bi bi-box-arrow-right icon_color"></i>
-                        <p class="ps-2 mb-0 logout">Logout</p>
+                        <p class="ps-2">Logout</p>
                       </a>
                     </li>
                   </ul>
-                </div>
-
-                <div class="ps-3">
-                  <i class="bi bi-gear icon_color icon_size setting"></i>
                 </div>
               </div>
             </div>
@@ -433,11 +508,11 @@
                                 </a>
                               </li>
                               <!-- <li>
-                              <a href="Designation.html">
-                                <i class="bi  bi-hand-index-thumb accordion_sidebar_icons"></i>
-                                <p>Designation</p>
-                              </a>
-                            </li> -->
+                                <a href="Designation.html">
+                                  <i class="bi  bi-hand-index-thumb accordion_sidebar_icons"></i>
+                                  <p>Designation</p>
+                                </a>
+                              </li> -->
                               <li>
                                 <a href="Location.html">
                                   <i
@@ -1008,10 +1083,13 @@
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="mb-2">
                   <label class="form-label">Branch</label>
-                  <input class="form-control" />
+                  <select class="form-select">
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                  </select>
                 </div>
               </div>
-              <div class="ps-2">
+              <div class="ps-3">
                 <label class="form-label">Status</label>
                 <div class="d-flex">
                   <div class="form-check pe-5">
