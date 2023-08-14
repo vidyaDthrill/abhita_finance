@@ -48,11 +48,17 @@
   margin-bottom: 35px;
 }
 
-.login-heading h4 {
+.login-heading h4,
+.login-heading h3 {
   color: #000249 !important;
   font-weight: 700 !important;
-  margin-top: 30px !important;
+  /* margin-top: 30px !important; */
+}
+.login-heading h4 {
   font-size: 30px !important;
+}
+.login-heading h3 {
+  font-size: 40px !important;
 }
 
 .forget-pass {

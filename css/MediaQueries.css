@@ -23,6 +23,7 @@
   }
   .login-inner-wrapper {
     padding: 20px;
+    width: 100% !important;
   }
   .login-vector .login-img {
     display: none;
@@ -31,10 +32,15 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    margin: auto 0;
+    left:10px;
+    right:10px;
+    margin: auto ;
   }
   .login-heading h4 {
     margin-top: 0 !important;
+  }
+  .login-heading h3 {
+    font-size: 30px !important;
   }
 
   .header_profile,
@@ -70,6 +76,15 @@
   }
   .content {
     margin-left: 0;
+  }
+
+  .login-vector .login-img {
+    display: none;
+  }
+
+  .login-inner-wrapper {
+    padding: 20px;
+    width: 70%;
   }
 }
 
@@ -157,4 +172,3 @@
 .accordion_sidebar_icons {
   font-size: 7px;
 }
-
