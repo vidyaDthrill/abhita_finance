@@ -317,9 +317,27 @@
             </a>
           </li>
           <li>
-            <a href="SendGrForApproval.html">
+            <a href="ApprovalGroups.html">
               <i class="bi bi-person-check sidebar_icons"></i>
               <p>Approval Groups</p>
+            </a>
+          </li>
+          <li>
+            <a href="ApprovedLoan.html">
+              <i class="bi bi-file-earmark-check sidebar_icons"></i>
+              <p>Approved Loan</p>
+            </a>
+          </li>
+          <li>
+            <a href="LoanTrail.html">
+              <i class="bi bi-calendar4-week sidebar_icons"></i>
+              <p>Loan Trail</p>
+            </a>
+          </li>
+          <li>
+            <a href="BankPortal.html">
+              <i class="bi bi-bank sidebar_icons"></i>
+              <p>Bank (Portal)</p>
             </a>
           </li>
         </ul>
@@ -691,243 +709,183 @@
       <div class="content">
         <div class="d-flex justify-content-between align-items-center pb-3">
           <div class="">
-            <p>Home / <strong>Group Approval</strong></p>
-          </div>
-          <button
-            class="add-btn d-flex align-items-center"
-            data-bs-toggle="modal"
-            data-bs-target="#AddGroupstaticBackdrop"
-          >
-            <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">New Group</p>
-          </button>
-        </div>
-
-        <div class="filter_section mb-3">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Select Group Name</label>
-                <select class="form-select">
-                  <option>Abhita Finance 1</option>
-                  <option>Abhita Finance 2</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-sm-12">
-              <div class="d-flex justify-content-start">
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button type="button" class="submit-btn">Search</button>
-                </div>
-              </div>
-            </div>
+            <p>Home / <strong>Approved Loan</strong></p>
           </div>
         </div>
 
-        <div class="d-flex justify-content-end mb-3">
-          <div class="position-relative">
-            <input type="text" class="search_input" />
-            <i class="bi bi-search header_search_icon"></i>
-          </div>
-        </div>
-
-        <table id="example2" class="table table-bordered table-hover">
-          <thead>
-            <tr>
-              <th>Customer Code</th>
-              <th>Customer Name</th>
-              <th>Mobile No.</th>
-              <th>Email ID</th>
-              <th>City</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>cust101</td>
-              <td>Rita Roy</td>
-              <td>9876543212</td>
-              <td>Rita@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-            <tr>
-              <td>cust102</td>
-              <td>Neeta Patil</td>
-              <td>8974537282</td>
-              <td>neeta@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-            <tr>
-              <td>cust103</td>
-              <td>Sunita Shah</td>
-              <td>7858493929</td>
-              <td>sunita@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-            <tr>
-              <td>cust104</td>
-              <td>Bhakti Yadav</td>
-              <td>9473287344</td>
-              <td>bhakti@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-            <tr>
-              <td>cust105</td>
-              <td>Geeta Phalak</td>
-              <td>8784746743</td>
-              <td>geeta@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-            <tr>
-              <td>cust106</td>
-              <td>Sita Deshmukh</td>
-              <td>9436326734</td>
-              <td>sita@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-            <tr>
-              <td>cust107</td>
-              <td>Sonali Sonawane</td>
-              <td>97233757878</td>
-              <td>sonali@gmail.com</td>
-
-              <td>Muktainagar</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div
-          class=""
-          id="HideBtn"
-          style="display: flex; justify-content: center"
-        >
-          <div class="d-flex justify-content-center mt-4 ml-2">
-            <button
-              type="button"
-              class="submit-btn"
-              onclick="ShowAndHideAccept()"
-            >
-              Accept
-            </button>
-          </div>
-
-          <div class="d-flex justify-content-center mt-4 ml-2">
-            <button
-              type="button"
-              class="submit-btn"
-              onclick="ShowAndHideReject()"
-            >
-              Reject
-            </button>
-          </div>
-          <div class="d-flex justify-content-center mt-4 ml-2">
-            <button
-              type="button"
-              class="submit-btn"
-              onclick="ShowAndHideSendBack()"
-            >
-              Send Back
-            </button>
-          </div>
-        </div>
-
-        <!-- Accept Fields -->
-        <div class="my-5" id="Accept" style="display: none">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Remark</label>
-                <input class="form-control" type="text" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="d-flex">
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button type="button" class="submit-btn">Submit</button>
-                </div>
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button
-                    type="button"
-                    class="cancel-btn"
-                    onclick="cancelBtn()"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="send_back_wrapper mt-2">
+              <h4 class="section_wise_heading text-center mt-3 mb-2">
+                Approved Groups
+              </h4>
+              <ul class="send_back_ul">
+                <li>
+                  <p class="fw-semibold">Gr101</p>
+                  <p>GroupName1</p>
+                  <p>Pune</p>
+                </li>
+                <li>
+                  <p class="fw-semibold">Gr105</p>
+                  <p>GroupName5</p>
+                  <p>Mumbai</p>
+                </li>
+                <li>
+                  <p class="fw-semibold">Gr108</p>
+                  <p>GroupName8</p>
+                  <p>Thane</p>
+                </li>
+                <li>
+                  <p class="fw-semibold">Gr1012</p>
+                  <p>GroupName12</p>
+                  <p>Nashik</p>
+                </li>
+                <li>
+                  <p class="fw-semibold">Gr1015</p>
+                  <p>GroupName15</p>
+                  <p>Mumbai</p>
+                </li>
+                <li>
+                  <p class="fw-semibold">Gr1018</p>
+                  <p>GroupName18</p>
+                  <p>Thane</p>
+                </li>
+                <li>
+                  <p class="fw-semibold">Gr1020</p>
+                  <p>GroupName20</p>
+                  <p>Nashik</p>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+          <div class="col-lg-9 col-md-12 col-sm-12">
+            <div class="d-flex justify-content-end mb-3">
+              <div class="position-relative">
+                <input type="text" class="search_input" />
+                <i class="bi bi-search header_search_icon"></i>
+              </div>
+            </div>
 
-        <!-- Reject Fields -->
-        <div class="my-5" id="Reject" style="display: none">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Select Rejection Reason</label>
-                <select class="form-select">
-                  <option>Cibil Score below 300</option>
-                  <option>House Verification not proper</option>
-                  <option>Documents not Proper</option>
-                  <option>Exist loan above 1,50,000 Lacs</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Remark</label>
-                <input class="form-control" type="text" />
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="d-flex">
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button type="button" class="submit-btn">Submit</button>
-                </div>
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button
-                    type="button"
-                    class="cancel-btn"
-                    onclick="cancelBtn()"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Send Back Fields -->
-        <div class="my-5" id="SendBack" style="display: none">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Remark</label>
-                <input class="form-control" type="text" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="d-flex">
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button type="button" class="submit-btn">Submit</button>
-                </div>
-                <div class="d-flex justify-content-center mt-4 ml-2">
-                  <button
-                    type="button"
-                    class="cancel-btn"
-                    onclick="cancelBtn()"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
+            <table id="example2" class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Customer Code</th>
+                  <th>Customer Name</th>
+                  <th>Mobile No.</th>
+                  <th>Email ID</th>
+                  <th>City</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>cust101</td>
+                  <td>Rita Roy</td>
+                  <td>9876543212</td>
+                  <td>Rita@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>cust102</td>
+                  <td>Neeta Patil</td>
+                  <td>8974537282</td>
+                  <td>neeta@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>cust103</td>
+                  <td>Sunita Shah</td>
+                  <td>7858493929</td>
+                  <td>sunita@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>cust104</td>
+                  <td>Bhakti Yadav</td>
+                  <td>9473287344</td>
+                  <td>bhakti@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>cust105</td>
+                  <td>Geeta Phalak</td>
+                  <td>8784746743</td>
+                  <td>geeta@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>cust106</td>
+                  <td>Sita Deshmukh</td>
+                  <td>9436326734</td>
+                  <td>sita@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>cust107</td>
+                  <td>Sonali Sonawane</td>
+                  <td>97233757878</td>
+                  <td>sonali@gmail.com</td>
+                  <td>Muktainagar</td>
+                  <td>Active</td>
+                  <td>
+                    <div class="d-flex justify-content-center">
+                      <div class="ed_div">
+                        <i class="bi bi-printer print_icon"></i>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -1030,12 +988,12 @@
     <script src="./dist/js/demo.js"></script>
 
     <script>
-      var x = document.getElementById("Accept");
+      var x = document.getElementById("Approve");
       var y = document.getElementById("Reject");
       var z = document.getElementById("SendBack");
       var Hide = document.getElementById("HideBtn");
 
-      function ShowAndHideAccept() {
+      function ShowAndHideApprove() {
         if (x.style.display == "none") {
           x.style.display = "block";
           y.style.display = "none";

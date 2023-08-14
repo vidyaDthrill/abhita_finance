@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/Sidebar.css" />
     <link rel="stylesheet" href="./css/Header.css" />
     <link rel="stylesheet" href="./css/Common.css" />
-    <link rel="stylesheet" href="./css/FilterSection.css" />
     <link rel="stylesheet" href="./css/MediaQueries.css" />
+    <link rel="stylesheet" href="./css/FilterSection.css" />
     <!-- Bootstrap css link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -707,363 +707,471 @@
       <div class="content">
         <div class="d-flex justify-content-between align-items-center pb-3">
           <div class="">
-            <p>Home / Customer / <strong>Customers </strong></p>
+            <p>Home / <strong>Loan Trail</strong></p>
           </div>
-          <button
-            class="add-btn d-flex align-items-center"
-            onclick="AddCustomer()"
-          >
-            <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">Customer</p>
-          </button>
         </div>
 
         <div class="filter_section mb-3">
           <div class="row">
-            <div class="col-lg-2 col-md-12 col-sm-12">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="mb-2">
-                <label class="form-label">Customer Code</label>
+                <label class="form-label">Loan Application No.</label>
                 <input class="form-control" type="text" />
               </div>
             </div>
-            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="mb-2">
-                <label class="form-label">Customer Name</label>
+                <label class="form-label">Customer ID</label>
                 <input class="form-control" type="text" />
               </div>
             </div>
-            <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <div class="mb-2">
-                <label class="form-label">Email ID</label>
-                <input class="form-control" type="text" />
+                <div class="d-flex justify-content-start mt-4">
+                  <button type="button" class="submit-btn">Go</button>
+                </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Mobile No.</label>
-                <input class="form-control" type="text" />
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Status</label>
-                <select class="form-select">
-                  <option>Verified</option>
-                  <option>Active</option>
-                  <option>Pending</option>
-                  <option>Inprogress</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex justify-content-center mt-2">
-            <button type="button" class="submit-btn">Search</button>
           </div>
         </div>
 
-        <table id="example2" class="table table-bordered table-hover">
-          <thead>
-            <tr>
-              <th>Customer Code</th>
-              <th>Customer Name</th>
-              <th>Email ID</th>
-              <th>Mobile No.</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cust101</td>
-              <td>Seema Patil</td>
-              <td>Seema@gmail.com</td>
-              <td>9876543220</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
+        <!-- Timelime example  -->
+        <div class="row">
+          <div class="col-md-12">
+            <!-- The time line -->
+            <div class="timeline">
+              <!-- timeline time label -->
+              <!-- <div class="time-label">
+                <span class="bg-red">10 Feb. 2014</span>
+              </div> -->
+              <!-- /.timeline-label -->
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file timeline_icon"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">Loan Application</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2">
+                      <div class="d-flex">
+                        <p><strong>Loan Application No. :</strong></p>
+                        <p class="ps-3">LA01934</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Loan Application Date :</strong></p>
+                        <p class="ps-3">12/01/2023</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Customer Name :</strong></p>
+                        <p class="ps-3">Seema Patil</p>
+                      </div>
+                    </div>
+
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress. All
+                            Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust102</td>
-              <td>Rita Roy</td>
-              <td>Rita@gmail.com</td>
-              <td>7876543220</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust103</td>
-              <td>Sunita Nerkar</td>
-              <td>Sunita@gmail.com</td>
-              <td>87564534182</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust104</td>
-              <td>Keya Ingale</td>
-              <td>Keya@gmail.com</td>
-              <td>87623443220</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                  <hr />
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Completed</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust105</td>
-              <td>Nitya Shelke</td>
-              <td>Nitya@gmail.com</td>
-              <td>9789812853</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">Cibil Score</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2">
+                      <div class="d-flex">
+                        <p><strong>Cibil Score:</strong></p>
+                        <p class="ps-3">400</p>
+                      </div>
+                    </div>
+
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress. All Process are in progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust106</td>
-              <td>Amrita Deshmukh</td>
-              <td>Amrita@gmail.com</td>
-              <td>7808092110</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust107</td>
-              <td>Priyanka Joshi</td>
-              <td>Priyanka@gmail.com</td>
-              <td>8076129054</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                  <hr />
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Completed</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust108</td>
-              <td>Ujwala Chaudhari</td>
-              <td>Ujwala@gmail.com</td>
-              <td>7628543220</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">House Verification</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2">
+                      <div class="d-flex">
+                        <p><strong>House Verification Date:</strong></p>
+                        <p class="ps-3">02/04/2023</p>
+                      </div>
+                    </div>
+
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress. All Process are in progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust109</td>
-              <td>Gauri Patil</td>
-              <td>Gauri@gmail.com</td>
-              <td>9876033241</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust110</td>
-              <td>Priti Surve</td>
-              <td>Priti@gmail.com</td>
-              <td>7845321092</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                  <hr />
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Completed</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust112</td>
-              <td>Kriti Salon</td>
-              <td>Kriti@gmail.com</td>
-              <td>9876543220</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">Group Assignment</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2">
+                      <div class="d-flex">
+                        <p><strong>Group Code:</strong></p>
+                        <p class="ps-3">GR101</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Group Name:</strong></p>
+                        <p class="ps-3">Abhita Finance 1</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Group Assignment Date:</strong></p>
+                        <p class="ps-3">02/04/2023</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Branch:</strong></p>
+                        <p class="ps-3">Pune</p>
+                      </div>
+                    </div>
+
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust113</td>
-              <td>Sita Brijlani</td>
-              <td>Sita@gmail.com</td>
-              <td>8797696512</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust114</td>
-              <td>Geeta Phalak</td>
-              <td>Geeta@gmail.com</td>
-              <td>98761230856</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust115</td>
-              <td>Vishakha Salunkhe</td>
-              <td>Vishakha@gmail.com</td>
-              <td>878652192</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
+                  <hr />
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Completed</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-          <!-- <tfoot>
-            <tr>
-              <th>Group Code</th>
-              <th>Group Name</th>
-              <th>Branch</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </tfoot> -->
-        </table>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">Group Approval</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress. All
+                            Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Approved</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">Send To Bank</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2">
+                      <div class="d-flex">
+                        <p><strong>Sent Date:</strong></p>
+                        <p class="ps-3">02/04/2023</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Bank Name:</strong></p>
+                        <p class="ps-3">Shahu Bank</p>
+                      </div>
+                      <div class="d-flex">
+                        <p><strong>Branch:</strong></p>
+                        <p class="ps-3">Pune</p>
+                      </div>
+                    </div>
+
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress. All
+                            Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Sent</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+
+              <!-- timeline item start-->
+              <div>
+                <i class="fas fa-file bg-blue"></i>
+                <div class="timeline-item">
+                  <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                  <h3 class="timeline-header">
+                    <a href="#" class="timeline_heading">Loan Disbursed</a>
+                    <i class="bi bi-pencil-square edit_icon ps-2"></i>
+                    <i class="bi bi-eye eye_icon ps-1"></i>
+                  </h3>
+
+                  <div class="timeline-body">
+                    <div class="p-2">
+                      <div class="d-flex">
+                        <p><strong>Loan Disbursed Date:</strong></p>
+
+                        <p class="ps-3">02/04/2023</p>
+                      </div>
+                    </div>
+
+                    <div class="p-2 timeline_bg mt-2">
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Processed By :</strong>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="timeline_p ps-3">Raj Roy</p>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="">
+                          <p class="timeline_p">
+                            <strong>Remark:</strong>
+                            All Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress. All
+                            Process are in progress. All Process are in
+                            progress. All Process are in progress. All Process
+                            are in progress. All Process are in progress.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="timeline-footer">
+                    <div class="d-flex">
+                      <p class="pe-2">Disbursed</p>
+                      <div>
+                        <i class="bi bi-check bg-green rounded-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+              </div>
+              <!-- timeline item end-->
+            </div>
+            <!-- /.col -->
+          </div>
+        </div>
+        <!-- /.timeline -->
       </div>
       <!-- Content End -->
     </div>
@@ -1111,11 +1219,6 @@
           responsive: true,
         });
       });
-    </script>
-    <script>
-      function AddCustomer() {
-        window.open("AddCustomer.html", "_self");
-      }
     </script>
   </body>
 </html>

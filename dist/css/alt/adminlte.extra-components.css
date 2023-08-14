@@ -747,7 +747,6 @@
 .timeline > div > .timeline-item > .timeline-footer > a {
   color: #fff;
 }
-
 .timeline > div > .fa,
 .timeline > div > .fas,
 .timeline > div > .far,
@@ -756,7 +755,7 @@
 .timeline > div > .fad,
 .timeline > div > .svg-inline--fa,
 .timeline > div > .ion {
-  background-color: #adb5bd;
+  background-color: #000249;
   border-radius: 50%;
   font-size: 16px;
   height: 30px;
@@ -766,7 +765,9 @@
   text-align: center;
   top: 0;
   width: 30px;
+  color: #fff;
 }
+
 
 .timeline > div > .svg-inline--fa {
   padding: 7px;

@@ -315,9 +315,27 @@
             </a>
           </li>
           <li>
-            <a href="SendGrForApproval.html">
+            <a href="ApprovalGroups.html">
               <i class="bi bi-person-check sidebar_icons"></i>
               <p>Approval Groups</p>
+            </a>
+          </li>
+          <li>
+            <a href="ApprovedLoan.html">
+              <i class="bi bi-file-earmark-check sidebar_icons"></i>
+              <p>Approved Loan</p>
+            </a>
+          </li>
+          <li>
+            <a href="LoanTrail.html">
+              <i class="bi bi-calendar4-week sidebar_icons"></i>
+              <p>Loan Trail</p>
+            </a>
+          </li>
+          <li>
+            <a href="BankPortal.html">
+              <i class="bi bi-bank sidebar_icons"></i>
+              <p>Bank (Portal)</p>
             </a>
           </li>
         </ul>
@@ -693,8 +711,7 @@
           </div>
           <button
             class="add-btn d-flex align-items-center"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            onclick="AddBranch()"
           >
             <i class="bi bi-plus-lg"></i>
             <p class="ms-1">New Branch</p>
@@ -1149,5 +1166,10 @@
         });
       });
     </script>
+      <script>
+        function AddBranch() {
+          window.open("AddBranch.html", "_self");
+        }
+      </script>
   </body>
 </html>

@@ -315,9 +315,27 @@
             </a>
           </li>
           <li>
-            <a href="SendGrForApproval.html">
+            <a href="ApprovalGroups.html">
               <i class="bi bi-person-check sidebar_icons"></i>
               <p>Approval Groups</p>
+            </a>
+          </li>
+          <li>
+            <a href="ApprovedLoan.html">
+              <i class="bi bi-file-earmark-check sidebar_icons"></i>
+              <p>Approved Loan</p>
+            </a>
+          </li>
+          <li>
+            <a href="LoanTrail.html">
+              <i class="bi bi-calendar4-week sidebar_icons"></i>
+              <p>Loan Trail</p>
+            </a>
+          </li>
+          <li>
+            <a href="BankPortal.html">
+              <i class="bi bi-bank sidebar_icons"></i>
+              <p>Bank (Portal)</p>
             </a>
           </li>
         </ul>
@@ -693,8 +711,7 @@
           </div>
           <button
             class="add-btn d-flex align-items-center"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            onclick="AddLocation()"
           >
             <i class="bi bi-plus-lg"></i>
             <p class="ms-1">Location</p>
@@ -887,141 +904,6 @@
       <!-- Content End -->
     </div>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Add Location
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- <h4 class="section_wise_heading">Location Details</h4> -->
-
-            <div class="row">
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Location Name</label>
-                  <input class="form-control" type="text" />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Location Code</label>
-                  <input class="form-control" type="text" />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">City</label>
-                  <input class="form-control" type="text" />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Mobile No.</label>
-                  <input class="form-control" type="text" />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Email ID</label>
-                  <input class="form-control" type="text" />
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">IS Active</label>
-                  <select class="form-select">
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">Address</label>
-                  <textarea class="form-control" rows="2"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <h4 class="section_wise_heading mt-3">Contact Details</h4>
-
-            <div class="my-1">
-              <!-- <p class="fs-6 section_wise_sub_heading">Contact Person 1</p> -->
-              <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Contact Person 1</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Mobile No.</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Email ID</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="mt-2">
-                <!-- <p class="fs-6 section_wise_sub_heading">Contact Person 2</p> -->
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="mb-2">
-                      <label class="form-label">Contact Person 2</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="mb-2">
-                      <label class="form-label">Mobile No.</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="mb-2">
-                      <label class="form-label">Email ID</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="cancel-btn" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button type="button" class="submit-btn" onClick="{handleSubmit}">
-              Submit
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- jQuery -->
     <script src="./plugins/jquery/jquery.min.js"></script>
@@ -1067,5 +949,10 @@
         });
       });
     </script>
+      <script>
+        function AddLocation() {
+          window.open("AddLocation.html", "_self");
+        }
+      </script>
   </body>
 </html>
