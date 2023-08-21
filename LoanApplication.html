@@ -294,40 +294,71 @@
           <li>
             <a href="HouseVerification.html">
               <i class="bi bi-house-check sidebar_icons"></i>
-              <p>House Verification</p>
+              <p>Verification</p>
             </a>
           </li>
           <li>
-            <a href="GroupAssignment.html">
-              <i class="bi bi-person-add sidebar_icons"></i>
-              <p>Group Assignment</p>
-            </a>
+            <div class="accordion accordion-flush" id="accordionLoanGroup">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseLoanGroup"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseLoanGroup"
+                  >
+                    <a href="#">
+                      <i class="bi bi-plus-circle sidebar_icons"></i>
+                      <p>Loan Group</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseLoanGroup"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionLoanGroup"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="GroupAssignment.html">
+                          <i class="bi bi-person-add sidebar_icons"></i>
+                          <p>Group Assignment</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApprovalGroups.html">
+                          <i class="bi bi-person-check sidebar_icons"></i>
+                          <p>Approval Request</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApprovedLoan.html">
+                          <i class="bi bi-file-earmark-check sidebar_icons"></i>
+                          <p>Approved Loan</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="SendBack.html">
+                          <i class="bi bi-arrow-left-circle sidebar_icons"></i>
+                          <p>Send Back</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="RejectedGroup.html">
+                          <i class="bi bi-x-circle sidebar_icons"></i>
+                          <p>Rejected Group</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li>
-            <a href="SendBack.html">
-              <i class="bi bi-arrow-left-circle sidebar_icons"></i>
-              <p>Send Back</p>
-            </a>
-          </li>
-          <li>
-            <a href="RejectedGroup.html">
-              <i class="bi bi-x-circle sidebar_icons"></i>
-              <p>Rejected Group</p>
-            </a>
-          </li>
-         <li>
-            <a href="ApprovalGroups.html">
-              <i class="bi bi-person-check sidebar_icons"></i>
-              <p>Approval Groups</p>
-            </a>
-          </li>
-             <li>
-            <a href="ApprovedLoan.html">
-              <i class="bi bi-file-earmark-check sidebar_icons"></i>
-              <p>Approved Loan</p>
-            </a>
-          </li>
-         <li>
             <a href="LoanTrail.html">
               <i class="bi bi-calendar4-week sidebar_icons"></i>
               <p>Loan Trail</p>
@@ -550,6 +581,14 @@
                                 </a>
                               </li>
                               <li>
+                                <a href="LookUp.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>LookUp</p>
+                                </a>
+                              </li>
+                              <li>
                                 <a href="ApplicationSettings.html">
                                   <i
                                     class="bi bi-hand-index-thumb accordion_sidebar_icons"
@@ -691,6 +730,100 @@
                     </div>
                   </li>
                   <li>
+                    <a href="LoanApplication.html">
+                      <i class="bi bi-file-text sidebar_icons"></i>
+                      <p>Loan Application</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="HouseVerification.html">
+                      <i class="bi bi-house-check sidebar_icons"></i>
+                      <p>Verification</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionLoanGroup"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseLoanGroup"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseLoanGroup"
+                          >
+                            <a href="#">
+                              <i class="bi bi-plus-circle sidebar_icons"></i>
+                              <p>Loan Group</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseLoanGroup"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionLoanGroup"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="GroupAssignment.html">
+                                  <i class="bi bi-person-add sidebar_icons"></i>
+                                  <p>Group Assignment</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="ApprovalGroups.html">
+                                  <i
+                                    class="bi bi-person-check sidebar_icons"
+                                  ></i>
+                                  <p>Approval Request</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="ApprovedLoan.html">
+                                  <i
+                                    class="bi bi-file-earmark-check sidebar_icons"
+                                  ></i>
+                                  <p>Approved Loan</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="SendBack.html">
+                                  <i
+                                    class="bi bi-arrow-left-circle sidebar_icons"
+                                  ></i>
+                                  <p>Send Back</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="RejectedGroup.html">
+                                  <i class="bi bi-x-circle sidebar_icons"></i>
+                                  <p>Rejected Group</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="LoanTrail.html">
+                      <i class="bi bi-calendar4-week sidebar_icons"></i>
+                      <p>Loan Trail</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="BankPortal.html">
+                      <i class="bi bi-bank sidebar_icons"></i>
+                      <p>Bank (Portal)</p>
+                    </a>
+                  </li>
+                  <li>
                     <a href="#">
                       <i class="bi bi-box-arrow-right"></i>
                       <p onclick="Index()">Logout</p>
@@ -709,315 +842,639 @@
         <h1 class="modal-title">Loan Application</h1>
 
         <hr />
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-main-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-main"
-              type="button"
-              role="tab"
-              aria-controls="pills-main"
-              aria-selected="true"
+        <div class="mt-3">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-main-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-main"
+                type="button"
+                role="tab"
+                aria-controls="pills-main"
+                aria-selected="true"
+              >
+                Main
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-documents-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-documents"
+                type="button"
+                role="tab"
+                aria-controls="pills-documents"
+                aria-selected="false"
+              >
+                Documents
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-bank-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-bank"
+                type="button"
+                role="tab"
+                aria-controls="pills-bank"
+                aria-selected="false"
+              >
+                Bank Details
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-reference-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reference"
+                type="button"
+                role="tab"
+                aria-controls="pills-reference"
+                aria-selected="false"
+              >
+                Reference
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-nominee-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-nominee"
+                type="button"
+                role="tab"
+                aria-controls="pills-nominee"
+                aria-selected="false"
+              >
+                Nominee & Family
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-loan-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-loan"
+                type="button"
+                role="tab"
+                aria-controls="pills-loan"
+                aria-selected="false"
+              >
+                Loan
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Main  -->
+            <div
+              class="tab-pane fade show active"
+              id="pills-main"
+              role="tabpanel"
+              aria-labelledby="pills-main-tab"
+              tabindex="0"
             >
-              Main
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-documents-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-documents"
-              type="button"
-              role="tab"
-              aria-controls="pills-documents"
-              aria-selected="false"
-            >
-              Documents
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-bank-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-bank"
-              type="button"
-              role="tab"
-              aria-controls="pills-bank"
-              aria-selected="false"
-            >
-              Bank Details
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-reference-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-reference"
-              type="button"
-              role="tab"
-              aria-controls="pills-reference"
-              aria-selected="false"
-            >
-              Reference
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-nominee-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-nominee"
-              type="button"
-              role="tab"
-              aria-controls="pills-nominee"
-              aria-selected="false"
-            >
-              Nominee & Family
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-loan-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-loan"
-              type="button"
-              role="tab"
-              aria-controls="pills-loan"
-              aria-selected="false"
-            >
-              Loan
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-main"
-            role="tabpanel"
-            aria-labelledby="pills-main-tab"
-            tabindex="0"
-          >
-            <div class="tab mt-3 filter_section">
-              <!-- Group Details start -->
-              <h4 class="section_wise_heading mt-3">Group Details</h4>
+              <div class="tab mt-3 filter_section">
+                <!-- Group Details start -->
+                <h4 class="section_wise_heading mt-3">Group Details</h4>
 
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Branch Name</label>
-                    <select class="form-select">
-                      <option>Pune</option>
-                    </select>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Branch Name</label>
+                      <select class="form-select">
+                        <option>Pune</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Group Code</label>
-                    <input class="form-control" type="text" />
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Group Code</label>
+                      <input class="form-control" type="text" />
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Group Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
-              <!-- Group Details end -->
-
-              <!-- Basic Details start -->
-              <h4 class="section_wise_heading mt-3">Basic Details</h4>
-
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Customer ID</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">First Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Last Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Father Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Mother Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Spouse Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Marital Status</label>
-                    <select class="form-select">
-                      <option>Single</option>
-                      <option>Married</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Date of Birth</label>
-                    <input class="form-control" type="date" />
-                  </div>
-                </div>
-              </div>
-              <!-- Basic Details end -->
-
-              <!-- Contact Details start -->
-              <h4 class="section_wise_heading mt-3">Contact Details</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Mobile No.</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Alternative Mobile No.</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Email ID</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
-              <!-- Contact Details end -->
-
-              <!-- Address Details start -->
-              <h4 class="section_wise_heading mt-3">Address Details</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Address</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Area</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">City</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">State</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Country</label>
-                    <select class="form-select" disabled>
-                      <option>India</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Pincode</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
-              <!-- Address Details end -->
-
-              <!-- Other Details start -->
-              <h4 class="section_wise_heading mt-3">Other Details</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Religion</label>
-                    <select class="form-select">
-                      <option>Hindu</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Cast</label>
-                    <select class="form-select">
-                      <option>OBC</option>
-                      <option>Open</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <!-- Other Details end -->
-
-              <!-- Co-Applicant Details start -->
-              <div class="row my-3">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label"> Co-Applicant Details</label>
-                    <div class="d-flex">
-                      <div class="form-check pe-5">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="Status"
-                          id="StatusYes"
-                          onclick="ShowCoapplicant()"
-                          checked
-                        />
-                        <label class="form-check-label" for="StatusYes">
-                          Yes
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="Status"
-                          id="StatusNo"
-                          onclick="HideCoapplicant()"
-                        />
-                        <label class="form-check-label" for="StatusNo">
-                          No
-                        </label>
-                      </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Group Name</label>
+                      <input class="form-control" type="text" />
                     </div>
                   </div>
                 </div>
+                <!-- Group Details end -->
+
+                <!-- Basic Details start -->
+                <h4 class="section_wise_heading mt-3">Customer Details</h4>
+
+                <!-- Existing Or New Radio Button -->
+                <div class="d-flex mb-2" id="HideExistingOrNew">
+                  <div class="form-check pe-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ExistingOrNew"
+                      id="New"
+                      onclick="New()"
+                      checked
+                    />
+                    <label class="form-check-label" for="New"> New </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="ExistingOrNew"
+                      id="Existing"
+                      onclick="Existing()"
+                    />
+                    <label class="form-check-label" for="Existing">
+                      Existing
+                    </label>
+                  </div>
+                </div>
+
+                <div
+                  class="row mb-2"
+                  id="ExistingSearchFilter"
+                  style="display: none"
+                >
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Customer Code</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Mobile No.</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="d-flex justify-content-start mt-4">
+                      <button type="button" class="submit-btn" onclick="New()">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div id="ShowHideDetails">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Customer ID</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">First Name</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Last Name</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Father Name</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Mother Name</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Spouse Name</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Marital Status</label>
+                        <select class="form-select">
+                          <option>Single</option>
+                          <option>Married</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Date of Birth</label>
+                        <input class="form-control" type="date" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Basic Details end -->
+
+                  <!-- Contact Details start -->
+                  <h4 class="section_wise_heading mt-3">Contact Details</h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Mobile No.</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Alternative Mobile No.</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Email ID</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contact Details end -->
+
+                  <!-- Address Details start -->
+                  <h4 class="section_wise_heading mt-3">Address Details</h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Address</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Area</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">City</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">State</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Country</label>
+                        <select class="form-select">
+                          <option>India</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Pincode</label>
+                        <input class="form-control" type="text" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Address Details end -->
+
+                  <!-- Other Details start -->
+                  <h4 class="section_wise_heading mt-3">Other Details</h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Religion</label>
+                        <select class="form-select">
+                          <option>Hindu</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label">Cast</label>
+                        <select class="form-select">
+                          <option>OBC</option>
+                          <option>Open</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Other Details end -->
+
+                  <!-- Co-Applicant Details start -->
+                  <div class="row my-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2">
+                        <label class="form-label"> Co-Applicant Details</label>
+                        <div class="d-flex">
+                          <div class="form-check pe-5">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="Status"
+                              id="StatusYes"
+                              onclick="ShowCoapplicant()"
+                              checked
+                            />
+                            <label class="form-check-label" for="StatusYes">
+                              Yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="Status"
+                              id="StatusNo"
+                              onclick="HideCoapplicant()"
+                            />
+                            <label class="form-check-label" for="StatusNo">
+                              No
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="coapplicant">
+                    <h4 class="section_wise_heading mt-3">
+                      Co-Applicant Details
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">First Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Last Name</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Relation</label>
+                          <select class="form-select">
+                            <option>Mother</option>
+                            <option>Father</option>
+                            <option>Sister</option>
+                            <option>Brother</option>
+                            <option>Son</option>
+                            <option>Wife</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Date of Birth</label>
+                          <input class="form-control" type="date" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Mobile No.</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Co-Applicant Address Details -->
+                    <h4 class="section_wise_heading mt-3">
+                      Co-Applicant Address
+                    </h4>
+                    <div class="row">
+                      <div class="mb-2">
+                        <input type="checkbox" />
+                        <span class="ps-1 fs-6">Same as Applicant</span>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Address</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Area</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">City</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">State</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Country</label>
+                          <select class="form-select">
+                            <option>India</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2">
+                          <label class="form-label">Pincode</label>
+                          <input class="form-control" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Co-Applicant Details end -->
+
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="submit-btn">Save</button>
+                  </div>
+                </div>
               </div>
-              <div id="coapplicant">
-                <h4 class="section_wise_heading mt-3">Co-Applicant Details</h4>
+            </div>
+
+            <!-- Documents -->
+            <div
+              class="tab-pane fade"
+              id="pills-documents"
+              role="tabpanel"
+              aria-labelledby="pills-documents-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3">Upload Documents</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Document Type</label>
+                      <select class="form-select">
+                        <option>Applicant Photo</option>
+                        <option>Co-Applicant Photo</option>
+                        <option>Aadhar Card</option>
+                        <option>Pan Card</option>
+                        <option>Voter Card</option>
+                        <option>Ration Card</option>
+                        <option>Cancelled Cheque</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Document Number</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Upload Document</label>
+                      <input class="form-control" type="file" />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-2 mb-5">
+                  <div class="d-flex justify-content-end">
+                    <button type="button" class="add-btn">Add New</button>
+                  </div>
+                  <div class="d-flex justify-content-start">
+                    <button type="button" class="submit-btn">Save</button>
+                  </div>
+                </div>
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>SNo</th>
+                      <th>Document Type</th>
+                      <th>Document Number</th>
+                      <th>Document File</th>
+                      <th>Document Size</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Pan Card</td>
+                      <td>KCNAC7173L</td>
+                      <td>PanCard.pdf</td>
+                      <td>50.00KB</td>
+                      <td>
+                        <div class="d-flex">
+                          <div class="ed_div">
+                            <i class="bi bi-eye eye_icon"></i>
+                          </div>
+                          <div class="ed_div">
+                            <i class="bi bi-pencil-square edit_icon"></i>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Aadhar Card</td>
+                      <td>9876 4567 4317</td>
+                      <td>AadharCard.pdf</td>
+                      <td>90.2KB</td>
+                      <td>
+                        <div class="d-flex">
+                          <div class="ed_div">
+                            <i class="bi bi-eye eye_icon"></i>
+                          </div>
+                          <div class="ed_div">
+                            <i class="bi bi-pencil-square edit_icon"></i>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Bank Details -->
+            <div
+              class="tab-pane fade"
+              id="pills-bank"
+              role="tabpanel"
+              aria-labelledby="pills-bank-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3">Bank Details</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Bank Name</label>
+                      <select class="form-select">
+                        <option>Shahu Bank</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Branch Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">IFSC Code</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Account No.</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Confirm Account No.</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Name On Account</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-12 col-md-6 col-sm-12">
+                  <div class="mb-2">
+                    <label class="form-label">Bank Address</label>
+                    <textarea class="form-control"></textarea>
+                  </div>
+                </div> -->
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="submit-btn">Save</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reference -->
+            <div
+              class="tab-pane fade"
+              id="pills-reference"
+              role="tabpanel"
+              aria-labelledby="pills-reference-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3">Reference</h4>
                 <div class="row">
                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="mb-2">
@@ -1028,6 +1485,139 @@
                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="mb-2">
                       <label class="form-label">Last Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Date of Birth</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Relation</label>
+                      <select class="form-select">
+                        <option>Friend</option>
+                        <option>Relative</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Mobile No.</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Address</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Area</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">City</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">State</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Country</label>
+                      <select class="form-select">
+                        <option>India</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Pincode</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end mb-3">
+                  <button type="button" class="submit-btn">Save</button>
+                </div>
+                <!-- <h4 class="section_wise_heading mt-3">Reference Details</h4> -->
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Date Of Birth</th>
+                      <th>Mobile No.</th>
+                      <th>Relation</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rajendra</td>
+                      <td>Patil</td>
+                      <td>01/06/1973</td>
+                      <td>9876543219</td>
+                      <td>Father</td>
+                      <td>
+                        <div class="d-flex">
+                          <div class="ed_div">
+                            <i class="bi bi-pencil-square edit_icon"></i>
+                          </div>
+                          <div class="ed_div">
+                            <i class="bi bi-trash3 delete_icon"></i>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Nominee & Family -->
+            <div
+              class="tab-pane fade"
+              id="pills-nominee"
+              role="tabpanel"
+              aria-labelledby="pills-nominee-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3">Nominee & Family</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">First Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Last Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Date of Birth</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Mobile No.</label>
                       <input class="form-control" type="text" />
                     </div>
                   </div>
@@ -1045,23 +1635,12 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="mb-2">
-                      <label class="form-label">Date of Birth</label>
-                      <input class="form-control" type="date" />
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="mb-2">
-                      <label class="form-label">Mobile No.</label>
-                      <input class="form-control" type="text" />
-                    </div>
-                  </div>
                 </div>
-                <!-- Co-Applicant Address Details -->
-                <h4 class="section_wise_heading mt-3">
-                  Co-Applicant Address Details
-                </h4>
+                <h4 class="section_wise_heading mt-3">Address Details</h4>
+                <div class="mb-2">
+                  <input type="checkbox" />
+                  <span class="ps-1 fs-6">Same as Applicant</span>
+                </div>
                 <div class="row">
                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="mb-2">
@@ -1090,7 +1669,7 @@
                   <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="mb-2">
                       <label class="form-label">Country</label>
-                      <select class="form-select" disabled>
+                      <select class="form-select">
                         <option>India</option>
                       </select>
                     </div>
@@ -1102,486 +1681,197 @@
                     </div>
                   </div>
                 </div>
-                <input type="checkbox" />
-                <span class="ps-1 fs-6">Same as Applicant</span>
-              </div>
-              <!-- Co-Applicant Details end -->
-
-              <div class="d-flex justify-content-end">
-                <button type="button" class="submit-btn">Save</button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-documents"
-            role="tabpanel"
-            aria-labelledby="pills-documents-tab"
-            tabindex="0"
-          >
-            <div class="filter_section">
-              <h4 class="section_wise_heading mt-3">Upload Documents</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Document Type</label>
-                    <select class="form-select">
-                      <option>Applicant Photo</option>
-                      <option>Co-Applicant Photo</option>
-                      <option>Aadhar Card</option>
-                      <option>Pan Card</option>
-                      <option>Voter Card</option>
-                      <option>Ration Card</option>
-                    </select>
-                  </div>
+                <div class="my-3">
+                  <input type="checkbox" />
+                  <span class="ps-1 fs-6 is_nominee_text">IS NOMINEE</span>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Document Number</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Upload Document</label>
-                    <input class="form-control" type="file" />
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between mt-2 mb-5">
-                <div class="d-flex justify-content-end">
-                  <button type="button" class="add-btn">Add New</button>
-                </div>
-                <div class="d-flex justify-content-start">
+                <div class="d-flex justify-content-end my-3">
                   <button type="button" class="submit-btn">Save</button>
                 </div>
-              </div>
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th>Sr. No.</th>
-                    <th>Document Type</th>
-                    <th>Document Number</th>
-                    <th>Document File</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Pan Card</td>
-                    <td>KCNAC7173L</td>
-                    <td>PanCard.pdf</td>
-                    <td>
-                      <div class="d-flex">
-                        <div class="ed_div">
-                          <i class="bi bi-eye eye_icon"></i>
+                <!-- <h4 class="section_wise_heading mt-3">Nominee Details</h4> -->
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Date of Birth</th>
+                      <th>Mobile No.</th>
+                      <th>Relation</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rajendra</td>
+                      <td>Patil</td>
+                      <td>02/04/1981</td>
+                      <td>9843627182</td>
+                      <td>Father</td>
+                      <td>
+                        <div class="d-flex">
+                          <div class="ed_div">
+                            <i class="bi bi-pencil-square edit_icon"></i>
+                          </div>
+                          <div class="ed_div">
+                            <i class="bi bi-trash3 delete_icon"></i>
+                          </div>
                         </div>
-                        <div class="ed_div">
-                          <i class="bi bi-pencil-square edit_icon"></i>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Aadhar Card</td>
-                    <td>9876 4567 4317</td>
-                    <td>AadharCard.pdf</td>
-                    <td>
-                      <div class="d-flex">
-                        <div class="ed_div">
-                          <i class="bi bi-eye eye_icon"></i>
-                        </div>
-                        <div class="ed_div">
-                          <i class="bi bi-pencil-square edit_icon"></i>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-bank"
-            role="tabpanel"
-            aria-labelledby="pills-bank-tab"
-            tabindex="0"
-          >
-            <div class="filter_section">
-              <h4 class="section_wise_heading mt-3">Bank Details</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Bank Name</label>
-                    <select class="form-select">
-                      <option>Shahu Bank</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Branch Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">IFSC Code</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Account No.</label>
-                    <input class="form-control" type="password" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Confirm Account No.</label>
-                    <input class="form-control" type="password" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Name On Account</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <!-- <div class="col-lg-12 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Bank Address</label>
-                    <textarea class="form-control"></textarea>
-                  </div>
-                </div> -->
-              </div>
-              <div class="d-flex justify-content-end">
-                <button type="button" class="submit-btn">Save</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-reference"
-            role="tabpanel"
-            aria-labelledby="pills-reference-tab"
-            tabindex="0"
-          >
-            <div class="filter_section">
-              <h4 class="section_wise_heading mt-3">Reference</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">First Name</label>
-                    <input class="form-control" type="text" />
+
+            <!-- Loan -->
+            <div
+              class="tab-pane fade"
+              id="pills-loan"
+              role="tabpanel"
+              aria-labelledby="pills-loan-tab"
+              tabindex="0"
+            >
+              <div class="tab mt-3 filter_section">
+                <h4 class="section_wise_heading mt-3">Loan</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Loan Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Last Name</label>
-                    <input class="form-control" type="text" />
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Loan Sanction Date</label>
+                      <input class="form-control" type="date" />
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Date of Birth</label>
-                    <input class="form-control" type="date" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Relation</label>
-                    <select class="form-select">
-                      <option>Friend</option>
-                      <option>Relative</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Mobile No.</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Address</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Area</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">City</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">State</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Country</label>
-                    <select class="form-select" disabled>
-                      <option>India</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Pincode</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-end">
-                <button type="button" class="submit-btn">Save</button>
-              </div>
-              <!-- <h4 class="section_wise_heading mt-3">Reference Details</h4> -->
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Relation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Rajendra Kumar</td>
-                    <td>67</td>
-                    <td>Father</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-nominee"
-            role="tabpanel"
-            aria-labelledby="pills-nominee-tab"
-            tabindex="0"
-          >
-            <div class="filter_section">
-              <h4 class="section_wise_heading mt-3">Nominee & Family</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">First Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Last Name</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Date of Birth</label>
-                    <input class="form-control" type="date" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Mobile No.</label>
-                    <input class="form-control" type="text" />
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Name of Activity</label>
+                      <input class="form-control" type="text" />
+                    </div>
                   </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Nominee Relation</label>
-                    <select class="form-select">
-                      <option>Mother</option>
-                      <option>Father</option>
-                      <option>Sister</option>
-                      <option>Brother</option>
-                      <option>Son</option>
-                      <option>Wife</option>
-                    </select>
+                <h4 class="section_wise_heading mt-3">
+                  Loan Disbursal Details
+                </h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Loan Approval Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Rate of Interest</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Consultancy Charges</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Deduction Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Insurance Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Processing Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Final Saction Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <h4 class="section_wise_heading mt-3">Address Details</h4>
-              <div class="mb-2">
-                <input type="checkbox" />
-                <span class="ps-1 fs-6">Same as Applicant</span>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Address</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Area</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">City</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">State</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Country</label>
-                    <select class="form-select" disabled>
-                      <option>India</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Pincode</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
-              <div class="my-3">
-                <input type="checkbox" />
-                <span class="ps-1 fs-6">IS NOMINEE</span>
-              </div>
-              <div class="d-flex justify-content-end my-3">
-                <button type="button" class="submit-btn">Save</button>
-              </div>
-              <!-- <h4 class="section_wise_heading mt-3">Nominee Details</h4> -->
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th>Nominee Name</th>
-                    <th>Age</th>
-                    <th>Nominee Relation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Rajendra Kumar</td>
-                    <td>67</td>
-                    <td>Father</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-loan"
-            role="tabpanel"
-            aria-labelledby="pills-loan-tab"
-            tabindex="0"
-          >
-            <div class="tab mt-3 filter_section">
-              <h4 class="section_wise_heading mt-3">Loan</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Loan Amount</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Loan Sanction Date</label>
-                    <input class="form-control" type="date" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Name of Activity</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>
 
-              <h4 class="section_wise_heading mt-3">Loan Disbursed Details</h4>
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Loan Approval Amount</label>
-                    <input class="form-control" type="text" />
+                <h4 class="section_wise_heading mt-3">EMI Details</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">EMI Start Date</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">EMI End Date</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">EMI Day</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">EMI Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Rate of Interest</label>
-                    <input class="form-control" type="text" />
+
+                <h4 class="section_wise_heading mt-3">Insurance Details</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Policy Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Policy Number</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Policy Start Date</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Policy End Date</label>
+                      <input class="form-control" type="date" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Policy Amount</label>
+                      <input class="form-control" type="text" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2">
+                      <label class="form-label">Policy Company Name</label>
+                      <input class="form-control" type="text" />
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Consultancy Charges</label>
-                    <input class="form-control" type="text" />
-                  </div>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="submit-btn">Save</button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Deduction Amount</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Insurance Amount</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Processing Amount</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">Final Saction Amount</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">EMI Start Date</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="mb-2">
-                    <label class="form-label">EMI Day</label>
-                    <input class="form-control" type="text" />
-                  </div>
-                </div>
-              </div>   <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="mb-2">
-                  <label class="form-label">EMI End Date</label>
-                  <input class="form-control" type="text" />
-                </div>
-              </div>
-            </div>
-              <div class="d-flex justify-content-end">
-                <button type="button" class="submit-btn">Save</button>
               </div>
             </div>
           </div>
@@ -1604,21 +1894,32 @@
         window.open("Index.html", "_self");
       }
     </script>
+
+    <!-- Show hide Co-Applicant  -->
     <script>
       var x = document.getElementById("coapplicant");
       function ShowCoapplicant() {
-        if (x.style.display == "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
+        x.style.display = "block";
       }
       function HideCoapplicant() {
-        if (x.style.display == "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+        x.style.display = "none";
+      }
+    </script>
+
+    <!-- Existing or New -->
+    <script>
+      var y = document.getElementById("ExistingSearchFilter");
+      var HideExistingOrNew = document.getElementById("HideExistingOrNew");
+      var ShowHideDetails = document.getElementById("ShowHideDetails");
+      function Existing() {
+        y.style.display = "flex";
+        HideExistingOrNew.style.display = "none";
+        ShowHideDetails.style.display = "none";
+      }
+      function New() {
+        y.style.display = "none";
+        HideExistingOrNew.style.display = "none";
+        ShowHideDetails.style.display = "block";
       }
     </script>
   </body>

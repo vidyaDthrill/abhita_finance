@@ -292,25 +292,53 @@ hr {
 
 .timeline_heading {
   color: #000249;
+  text-decoration: none;
 }
 
-.timeline_icon{
+.timeline_icon {
   background-color: #000249;
 }
 
-.timeline > div > .fas{
+.timeline > div > .fas {
   background-color: rgb(221, 23, 23, 60%) !important;
   color: #fff !important;
 }
 
-.timeline > div > .timeline-item > .timeline-body{
+.timeline > div > .timeline-item > .timeline-body {
   padding: 0 !important;
 }
 
-.timeline_bg{
-  background-color: #f4f3f3;
-} 
+.timeline > div {
+  margin-bottom: 30px !important;
+}
 
-.timeline_p{
-  font-size: 13px;
+.timeline_bg {
+  background-color: #f4f3f3;
+}
+
+.timeline-body p {
+  font-size: 14px;
+}
+
+.timeline_bg_p {
+  font-size: 13px !important;
+}
+
+.is_nominee_text {
+  color: #a01644;
+}
+
+.view_text label{
+  font-size: 15px;
+}
+
+.view_text p {
+  font-size: 15px;
+  padding-left: 4px;
+  color: #000249;
+}
+
+.no_pagination .dataTables_paginate,
+.no_pagination .dataTables_info {
+  display: none !important;
 }

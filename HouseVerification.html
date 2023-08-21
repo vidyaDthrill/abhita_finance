@@ -285,7 +285,7 @@
             </div>
           </li>
           <li>
-            <a href="LoanApplication.html">
+            <a href="ViewLoanApplication.html">
               <i class="bi bi-file-text sidebar_icons"></i>
               <p>Loan Application</p>
             </a>
@@ -293,38 +293,69 @@
           <li>
             <a href="HouseVerification.html">
               <i class="bi bi-house-check sidebar_icons"></i>
-              <p>House Verification</p>
+              <p>Verification</p>
             </a>
           </li>
-          <li>
-            <a href="GroupAssignment.html">
-              <i class="bi bi-person-add sidebar_icons"></i>
-              <p>Group Assignment</p>
-            </a>
-          </li>
-          <li>
-            <a href="SendBack.html">
-              <i class="bi bi-arrow-left-circle sidebar_icons"></i>
-              <p>Send Back</p>
-            </a>
-          </li>
-          <li>
-            <a href="RejectedGroup.html">
-              <i class="bi bi-x-circle sidebar_icons"></i>
-              <p>Rejected Group</p>
-            </a>
-          </li>
-          <li>
-            <a href="ApprovalGroups.html">
-              <i class="bi bi-person-check sidebar_icons"></i>
-              <p>Approval Groups</p>
-            </a>
-          </li>
-          <li>
-            <a href="ApprovedLoan.html">
-              <i class="bi bi-file-earmark-check sidebar_icons"></i>
-              <p>Approved Loan</p>
-            </a>
+              <li>
+            <div class="accordion accordion-flush" id="accordionLoanGroup">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseLoanGroup"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseLoanGroup"
+                  >
+                    <a href="#">
+                      <i class="bi bi-plus-circle sidebar_icons"></i>
+                      <p>Loan Group</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseLoanGroup"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionLoanGroup"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="GroupAssignment.html">
+                          <i class="bi bi-person-add sidebar_icons"></i>
+                          <p>Group Assignment</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApprovalGroups.html">
+                          <i class="bi bi-person-check sidebar_icons"></i>
+                          <p>Approval Request</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApprovedLoan.html">
+                          <i class="bi bi-file-earmark-check sidebar_icons"></i>
+                          <p>Approved Loan</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="SendBack.html">
+                          <i class="bi bi-arrow-left-circle sidebar_icons"></i>
+                          <p>Send Back</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="RejectedGroup.html">
+                          <i class="bi bi-x-circle sidebar_icons"></i>
+                          <p>Rejected Group</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li>
             <a href="LoanTrail.html">
@@ -549,6 +580,14 @@
                                 </a>
                               </li>
                               <li>
+                                <a href="LookUp.html">
+                                  <i
+                                    class="bi bi-hand-index-thumb accordion_sidebar_icons"
+                                  ></i>
+                                  <p>LookUp</p>
+                                </a>
+                              </li>
+                              <li>
                                 <a href="ApplicationSettings.html">
                                   <i
                                     class="bi bi-hand-index-thumb accordion_sidebar_icons"
@@ -690,6 +729,100 @@
                     </div>
                   </li>
                   <li>
+                    <a href="LoanApplication.html">
+                      <i class="bi bi-file-text sidebar_icons"></i>
+                      <p>Loan Application</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="HouseVerification.html">
+                      <i class="bi bi-house-check sidebar_icons"></i>
+                      <p>Verification</p>
+                    </a>
+                  </li>
+                  <li>
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionLoanGroup"
+                    >
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseLoanGroup"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseLoanGroup"
+                          >
+                            <a href="#">
+                              <i class="bi bi-plus-circle sidebar_icons"></i>
+                              <p>Loan Group</p>
+                            </a>
+                          </button>
+                        </h2>
+                        <div
+                          id="flush-collapseLoanGroup"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionLoanGroup"
+                        >
+                          <div class="accordion-body">
+                            <ul class="accordion_sidebar_menu">
+                              <li>
+                                <a href="GroupAssignment.html">
+                                  <i class="bi bi-person-add sidebar_icons"></i>
+                                  <p>Group Assignment</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="ApprovalGroups.html">
+                                  <i
+                                    class="bi bi-person-check sidebar_icons"
+                                  ></i>
+                                  <p>Approval Request</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="ApprovedLoan.html">
+                                  <i
+                                    class="bi bi-file-earmark-check sidebar_icons"
+                                  ></i>
+                                  <p>Approved Loan</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="SendBack.html">
+                                  <i
+                                    class="bi bi-arrow-left-circle sidebar_icons"
+                                  ></i>
+                                  <p>Send Back</p>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="RejectedGroup.html">
+                                  <i class="bi bi-x-circle sidebar_icons"></i>
+                                  <p>Rejected Group</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="LoanTrail.html">
+                      <i class="bi bi-calendar4-week sidebar_icons"></i>
+                      <p>Loan Trail</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="BankPortal.html">
+                      <i class="bi bi-bank sidebar_icons"></i>
+                      <p>Bank (Portal)</p>
+                    </a>
+                  </li>
+                  <li>
                     <a href="#">
                       <i class="bi bi-box-arrow-right"></i>
                       <p onclick="Index()">Logout</p>
@@ -704,7 +837,7 @@
       <!-- Header End -->
 
       <!-- Content Start -->
-      <div class="content">
+      <div class="content no_pagination">
         <div class="d-flex justify-content-between align-items-center pb-3">
           <div class="">
             <p>Home / <strong>House Verification</strong></p>
@@ -721,20 +854,26 @@
 
         <div class="filter_section mb-3">
           <div class="row">
-            <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-12 col-sm-12">
               <div class="mb-2">
-                <label class="form-label">Customer Code</label>
+                <label class="form-label">Loan Application ID</label>
                 <input class="form-control" type="text" />
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-12 col-sm-12">
               <div class="mb-2">
-                <label class="form-label">Customer Name</label>
+                <label class="form-label">Cust Code</label>
+                <input class="form-control" type="text" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+              <div class="mb-2">
+                <label class="form-label">Mobile No.</label>
                 <input class="form-control" type="text" />
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="col-lg-3 col-md-12 col-sm-12">
               <div class="d-flex justify-content-start mt-4">
                 <button type="button" class="submit-btn">Search</button>
               </div>
@@ -745,7 +884,8 @@
         <table id="example2" class="table table-bordered table-hover">
           <thead>
             <tr>
-              <th>Customer Code</th>
+              <th>Loan ID</th>
+              <th>Cust Code</th>
               <th>Customer Name</th>
               <th>Mobile No.</th>
               <th>Email ID</th>
@@ -754,11 +894,11 @@
           </thead>
           <tbody>
             <tr>
+              <td><a href="ViewLoanApplication.html"> loan101</a></td>
               <td>cust101</td>
               <td>Rita Roy</td>
               <td>9876543212</td>
               <td>Rita@gmail.com</td>
-
               <td>Muktainagar</td>
             </tr>
           </tbody>
@@ -773,7 +913,7 @@
           </tfoot> -->
         </table>
 
-        <div class="filter_section mb-3">
+        <div class="filter_section my-3">
           <h4 class="section_wise_heading mt-3">Cibil Score</h4>
           <div class="row">
             <div class="col-lg-3 col-md-12 col-sm-12">
@@ -867,6 +1007,43 @@
     <script src="./dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="./dist/js/demo.js"></script>
+    
+ <!-- DataTables  & Plugins -->
+ <script src="./plugins/datatables/jquery.dataTables.min.js"></script>
+ <script src="./plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+ <script src="./plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+ <script src="./plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+ <script src="./plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+ <script src="./plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+ <script src="./plugins/jszip/jszip.min.js"></script>
+ <script src="./plugins/pdfmake/pdfmake.min.js"></script>
+ <script src="./plugins/pdfmake/vfs_fonts.js"></script>
+ <script src="./plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+ <script src="./plugins/datatables-buttons/js/buttons.print.min.js"></script>
+ <script src="./plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+ <script>
+   $(function () {
+     $("#example1")
+       .DataTable({
+         responsive: true,
+         lengthChange: false,
+         autoWidth: false,
+         buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+       })
+       .buttons()
+       .container()
+       .appendTo("#example1_wrapper .col-md-6:eq(0)");
+     $("#example2").DataTable({
+       paging: true,
+       lengthChange: false,
+       searching: false,
+       ordering: true,
+       info: true,
+       autoWidth: false,
+       responsive: true,
+     });
+   });
+ </script>
 
     <script>
       function addTextInput() {

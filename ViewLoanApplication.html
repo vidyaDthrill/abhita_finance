@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/Sidebar.css" />
     <link rel="stylesheet" href="./css/Header.css" />
     <link rel="stylesheet" href="./css/Common.css" />
+    <link rel="stylesheet" href="./css/AddCustomer.css" />
     <link rel="stylesheet" href="./css/FilterSection.css" />
     <link rel="stylesheet" href="./css/MediaQueries.css" />
     <!-- Bootstrap css link -->
@@ -297,34 +298,65 @@
             </a>
           </li>
           <li>
-            <a href="GroupAssignment.html">
-              <i class="bi bi-person-add sidebar_icons"></i>
-              <p>Group Assignment</p>
-            </a>
-          </li>
-          <li>
-            <a href="SendBack.html">
-              <i class="bi bi-arrow-left-circle sidebar_icons"></i>
-              <p>Send Back</p>
-            </a>
-          </li>
-          <li>
-            <a href="RejectedGroup.html">
-              <i class="bi bi-x-circle sidebar_icons"></i>
-              <p>Rejected Group</p>
-            </a>
-          </li>
-          <li>
-            <a href="ApprovalGroups.html">
-              <i class="bi bi-person-check sidebar_icons"></i>
-              <p>Approval Groups</p>
-            </a>
-          </li>
-          <li>
-            <a href="ApprovedLoan.html">
-              <i class="bi bi-file-earmark-check sidebar_icons"></i>
-              <p>Approved Loan</p>
-            </a>
+            <div class="accordion accordion-flush" id="accordionLoanGroup">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseLoanGroup"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseLoanGroup"
+                  >
+                    <a href="#">
+                      <i class="bi bi-plus-circle sidebar_icons"></i>
+                      <p>Loan Group</p>
+                    </a>
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseLoanGroup"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionLoanGroup"
+                >
+                  <div class="accordion-body">
+                    <ul class="accordion_sidebar_menu">
+                      <li>
+                        <a href="GroupAssignment.html">
+                          <i class="bi bi-person-add sidebar_icons"></i>
+                          <p>Group Assignment</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApprovalGroups.html">
+                          <i class="bi bi-person-check sidebar_icons"></i>
+                          <p>Approval Request</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="ApprovedLoan.html">
+                          <i class="bi bi-file-earmark-check sidebar_icons"></i>
+                          <p>Approved Loan</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="SendBack.html">
+                          <i class="bi bi-arrow-left-circle sidebar_icons"></i>
+                          <p>Send Back</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="RejectedGroup.html">
+                          <i class="bi bi-x-circle sidebar_icons"></i>
+                          <p>Rejected Group</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li>
             <a href="LoanTrail.html">
@@ -527,11 +559,11 @@
                                 </a>
                               </li>
                               <!-- <li>
-                              <a href="Designation.html">
-                                <i class="bi  bi-hand-index-thumb accordion_sidebar_icons"></i>
-                                <p>Designation</p>
-                              </a>
-                            </li> -->
+                                <a href="Designation.html">
+                                  <i class="bi  bi-hand-index-thumb accordion_sidebar_icons"></i>
+                                  <p>Designation</p>
+                                </a>
+                              </li> -->
                               <li>
                                 <a href="Location.html">
                                   <i
@@ -806,368 +838,697 @@
       <!-- Header End -->
 
       <!-- Content Start -->
-      <div class="content">
-        <div class="d-flex justify-content-between align-items-center pb-3">
-          <div class="">
-            <p>Home / Customer / <strong>Customers </strong></p>
-          </div>
-          <button
-            class="add-btn d-flex align-items-center"
-            onclick="AddCustomer()"
-          >
-            <i class="bi bi-plus-lg"></i>
-            <p class="ms-1">Customer</p>
-          </button>
-        </div>
+      <div class="content view_text">
+        <h1 class="modal-title">Loan Application Details</h1>
 
-        <div class="filter_section mb-3">
-          <div class="row">
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Cust Code</label>
-                <input class="form-control" type="text" />
+        <hr />
+        <div class="mt-3">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-main-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-main"
+                type="button"
+                role="tab"
+                aria-controls="pills-main"
+                aria-selected="true"
+              >
+                Main
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-documents-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-documents"
+                type="button"
+                role="tab"
+                aria-controls="pills-documents"
+                aria-selected="false"
+              >
+                Documents
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-bank-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-bank"
+                type="button"
+                role="tab"
+                aria-controls="pills-bank"
+                aria-selected="false"
+              >
+                Bank Details
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-reference-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reference"
+                type="button"
+                role="tab"
+                aria-controls="pills-reference"
+                aria-selected="false"
+              >
+                Reference
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-nominee-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-nominee"
+                type="button"
+                role="tab"
+                aria-controls="pills-nominee"
+                aria-selected="false"
+              >
+                Nominee & Family
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-loan-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-loan"
+                type="button"
+                role="tab"
+                aria-controls="pills-loan"
+                aria-selected="false"
+              >
+                Loan
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Main  -->
+            <div
+              class="tab-pane fade show active"
+              id="pills-main"
+              role="tabpanel"
+              aria-labelledby="pills-main-tab"
+              tabindex="0"
+            >
+              <div class="tab mt-3 filter_section">
+                <!-- Group Details start -->
+                <h4 class="section_wise_heading mt-3 mb-1">Group Details</h4>
+
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Branch Name: </label>
+                      <p class="ps-2">Pune</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Group Code: </label>
+                      <p class="ps-2">GR101</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Group Name: </label>
+                      <p class="ps-2">Abhita Finance 1</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Group Details end -->
+
+                <!-- Basic Details start -->
+                <h4 class="section_wise_heading mt-3 mb-1">Customer Details</h4>
+
+                <div id="ShowHideDetails">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Customer ID:</label>
+                        <p class="ps-2">Cust101</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">First Name:</label>
+                        <p class="ps-2">Rajnandini</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Last Name:</label>
+                        <p class="ps-2">Deshmukh</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Father Name:</label>
+                        <p class="ps-2">Rajesh</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Mother Name:</label>
+                        <p class="ps-2">Pratibha</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Spouse Name:</label>
+                        <p class="ps-2">Paras</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Marital Status:</label>
+                        <p class="ps-2">Married</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Date of Birth:</label>
+                        <p class="ps-2">04/02/1991</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Basic Details end -->
+
+                  <!-- Contact Details start -->
+                  <h4 class="section_wise_heading mt-3 mb-1">
+                    Contact Details
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Mobile No.:</label>
+                        <p class="ps-2">8412539654</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Alternative Mobile No.:</label>
+                        <p class="ps-2">8745123694</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Email ID:</label>
+                        <p class="ps-2">Rajnandini@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contact Details end -->
+
+                  <!-- Address Details start -->
+                  <h4 class="section_wise_heading mt-3 mb-1">
+                    Address Details
+                  </h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Address:</label>
+                        <p class="ps-2">Raj Banglow, New Building</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Area:</label>
+                        <p class="ps-2">Near Temple</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">City:</label>
+                        <p class="ps-2">Pune</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">State:</label>
+                        <p class="ps-2">Pune</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Country:</label>
+                        <p class="ps-2">India</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Pincode:</label>
+                        <p class="ps-2">487510</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Address Details end -->
+
+                  <!-- Other Details start -->
+                  <h4 class="section_wise_heading mt-3 mb-1">Other Details</h4>
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Religion:</label>
+                        <p class="ps-2">Hindu</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class="">Cast:</label>
+                        <p class="ps-2">Brahmin</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Other Details end -->
+
+                  <!-- Co-Applicant Details start -->
+                  <div class="row my-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <div class="mb-2 d-flex">
+                        <label class=""> Co-Applicant Details:</label>
+                        <p class="ps-2">Yes</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="coapplicant">
+                    <h4 class="section_wise_heading mt-3 mb-1">
+                      Co-Applicant Details
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">First Name:</label>
+                          <p class="ps-2">Rajesh</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Last Name:</label>
+                          <p class="ps-2">Deshmukh</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Relation:</label>
+                          <p class="ps-2">Father</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Date of Birth:</label>
+                          <p class="ps-2">10/05/1960</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Mobile No.:</label>
+                          <p class="ps-2">7965321480</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Co-Applicant Address Details -->
+                    <h4 class="section_wise_heading mt-3 mb-1">
+                      Co-Applicant Address
+                    </h4>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Address:</label>
+                          <p class="ps-2">Raj Banglow, New Building</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Area:</label>
+                          <p class="ps-2">Near Temple</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">City:</label>
+                          <p class="ps-2">Pune</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">State:</label>
+                          <p class="ps-2">Pune</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Country:</label>
+                          <p class="ps-2">India</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="mb-2 d-flex">
+                          <label class="">Pincode:</label>
+                          <p class="ps-2">487510</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Co-Applicant Details end -->
+                </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Customer Name</label>
-                <input class="form-control" type="text" />
+
+            <!-- Documents -->
+            <div
+              class="tab-pane fade"
+              id="pills-documents"
+              role="tabpanel"
+              aria-labelledby="pills-documents-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3 mb-1">Documents</h4>
+
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>SNo</th>
+                      <th>Document Type</th>
+                      <th>Document Number</th>
+                      <th>Document File</th>
+                      <th>Document Size</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Pan Card</td>
+                      <td>KCNAC7173L</td>
+                      <td>PanCard.pdf</td>
+                      <td>50.00KB</td>
+                      <td>
+                        <div class="d-flex">
+                          <div class="ed_div">
+                            <i class="bi bi-eye eye_icon"></i>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Aadhar Card</td>
+                      <td>9876 4567 4317</td>
+                      <td>AadharCard.pdf</td>
+                      <td>90.2KB</td>
+                      <td>
+                        <div class="d-flex">
+                          <div class="ed_div">
+                            <i class="bi bi-eye eye_icon"></i>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Email ID</label>
-                <input class="form-control" type="text" />
+
+            <!-- Bank Details -->
+            <div
+              class="tab-pane fade"
+              id="pills-bank"
+              role="tabpanel"
+              aria-labelledby="pills-bank-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3 mb-1">Bank Details</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Bank Name:</label>
+                      <p class="ps-2">Shahu Bank</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Branch Name:</label>
+                      <p class="ps-2">Pune</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">IFSC Code:</label>
+                      <p class="ps-2">SHUB0000745</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Account No.:</label>
+                      <p class="ps-2">87456321954</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Confirm Account No.:</label>
+                      <p class="ps-2">87456321954</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Name On Account:</label>
+                      <p class="ps-2">Rajnandini Deshmukh</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Mobile No.</label>
-                <input class="form-control" type="text" />
+
+            <!-- Reference -->
+            <div
+              class="tab-pane fade"
+              id="pills-reference"
+              role="tabpanel"
+              aria-labelledby="pills-reference-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3 mb-1">Reference</h4>
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Date Of Birth</th>
+                      <th>Mobile No.</th>
+                      <th>Relation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rajendra</td>
+                      <td>Patil</td>
+                      <td>01/06/1973</td>
+                      <td>9876543219</td>
+                      <td>Father</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="mb-2">
-                <label class="form-label">Status</label>
-                <select class="form-select">
-                  <option>Verified</option>
-                  <option>Active</option>
-                  <option>Pending</option>
-                  <option>Inprogress</option>
-                </select>
+
+            <!-- Nominee & Family -->
+            <div
+              class="tab-pane fade"
+              id="pills-nominee"
+              role="tabpanel"
+              aria-labelledby="pills-nominee-tab"
+              tabindex="0"
+            >
+              <div class="filter_section">
+                <h4 class="section_wise_heading mt-3 mb-1">Nominee & Family</h4>
+
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Date of Birth</th>
+                      <th>Mobile No.</th>
+                      <th>Relation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rajendra</td>
+                      <td>Patil</td>
+                      <td>02/04/1981</td>
+                      <td>9843627182</td>
+                      <td>Father</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="col-lg-2 col-md-12 col-sm-12">
-              <div class="d-flex justify-content-center mt-4">
-                <button type="button" class="submit-btn">Search</button>
+
+            <!-- Loan -->
+            <div
+              class="tab-pane fade"
+              id="pills-loan"
+              role="tabpanel"
+              aria-labelledby="pills-loan-tab"
+              tabindex="0"
+            >
+              <div class="tab mt-3 filter_section">
+                <h4 class="section_wise_heading mt-3 mb-1">Loan</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Loan Amount:</label>
+                      <p class="ps-2">40,000</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Loan Sanction Date:</label>
+                      <p class="ps-2">19/04/2023</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Name of Activity:</label>
+                      <p class="ps-2">Home Loan</p>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 class="section_wise_heading mt-3 mb-1">
+                  Loan Disbursal Details
+                </h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Loan Approval Amount:</label>
+                      <p class="ps-2">40,000</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Rate of Interest:</label>
+                      <p class="ps-2">26%</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Consultancy Charges:</label>
+                      <p class="ps-2">100</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Deduction Amount:</label>
+                      <p class="ps-2">200</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Insurance Amount:</label>
+                      <p class="ps-2">1000</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Processing Amount:</label>
+                      <p class="ps-2">2500</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Final Saction Amount:</label>
+                      <p class="ps-2">2534</p>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 class="section_wise_heading mt-3 mb-1">EMI Details</h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">EMI Start Date:</label>
+                      <p class="ps-2">01/10/2023</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">EMI End Date:</label>
+                      <p class="ps-2">01/10/2025</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">EMI Day:</label>
+                      <p class="ps-2">Thursday</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">EMI Amount:</label>
+                      <p class="ps-2">10,000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 class="section_wise_heading mt-3 mb-1">
+                  Insurance Details
+                </h4>
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Policy Name:</label>
+                      <p class="ps-2">LIC</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Policy Number:</label>
+                      <p class="ps-2">142-4521-5124</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Policy Start Date:</label>
+                      <p class="ps-2">16/02/2010</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Policy End Date:</label>
+                      <p class="ps-2">46/02/2025</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Policy Amount:</label>
+                      <p class="ps-2">50,000</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="mb-2 d-flex">
+                      <label class="">Policy Company Name:</label>
+                      <p class="ps-2">Toyota</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <table id="example2" class="table table-bordered table-hover">
-          <thead>
-            <tr>
-              <th>Cust Code</th>
-              <th>Customer Name</th>
-              <th>Email ID</th>
-              <th>Mobile No.</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cust101</td>
-              <td>Seema Patil</td>
-              <td>Seema@gmail.com</td>
-              <td>9876543220</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust102</td>
-              <td>Rita Roy</td>
-              <td>Rita@gmail.com</td>
-              <td>7876543220</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust103</td>
-              <td>Sunita Nerkar</td>
-              <td>Sunita@gmail.com</td>
-              <td>87564534182</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust104</td>
-              <td>Keya Ingale</td>
-              <td>Keya@gmail.com</td>
-              <td>87623443220</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust105</td>
-              <td>Nitya Shelke</td>
-              <td>Nitya@gmail.com</td>
-              <td>9789812853</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust106</td>
-              <td>Amrita Deshmukh</td>
-              <td>Amrita@gmail.com</td>
-              <td>7808092110</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust107</td>
-              <td>Priyanka Joshi</td>
-              <td>Priyanka@gmail.com</td>
-              <td>8076129054</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust108</td>
-              <td>Ujwala Chaudhari</td>
-              <td>Ujwala@gmail.com</td>
-              <td>7628543220</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust109</td>
-              <td>Gauri Patil</td>
-              <td>Gauri@gmail.com</td>
-              <td>9876033241</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust110</td>
-              <td>Priti Surve</td>
-              <td>Priti@gmail.com</td>
-              <td>7845321092</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust112</td>
-              <td>Kriti Salon</td>
-              <td>Kriti@gmail.com</td>
-              <td>9876543220</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust113</td>
-              <td>Sita Brijlani</td>
-              <td>Sita@gmail.com</td>
-              <td>8797696512</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust114</td>
-              <td>Geeta Phalak</td>
-              <td>Geeta@gmail.com</td>
-              <td>98761230856</td>
-              <td>Inactive</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Cust115</td>
-              <td>Vishakha Salunkhe</td>
-              <td>Vishakha@gmail.com</td>
-              <td>878652192</td>
-              <td>Active</td>
-              <td>
-                <div class="d-flex">
-                  <div class="ed_div">
-                    <i class="bi bi-eye eye_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-pencil-square edit_icon"></i>
-                  </div>
-                  <div class="ed_div">
-                    <i class="bi bi-trash3 delete_icon"></i>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-          <!-- <tfoot>
-            <tr>
-              <th>Group Code</th>
-              <th>Group Name</th>
-              <th>Branch</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </tfoot> -->
-        </table>
       </div>
       <!-- Content End -->
     </div>
@@ -1180,6 +1541,7 @@
     <script src="./dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="./dist/js/demo.js"></script>
+
     <!-- DataTables  & Plugins -->
     <script src="./plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="./plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -1216,9 +1578,21 @@
         });
       });
     </script>
+
     <script>
-      function AddCustomer() {
-        window.open("AddCustomer.html", "_self");
+      function Index() {
+        window.open("Index.html", "_self");
+      }
+    </script>
+
+    <!-- Show hide Co-Applicant  -->
+    <script>
+      var x = document.getElementById("coapplicant");
+      function ShowCoapplicant() {
+        x.style.display = "block";
+      }
+      function HideCoapplicant() {
+        x.style.display = "none";
       }
     </script>
   </body>
